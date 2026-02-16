@@ -42,59 +42,97 @@
             <!-- Navigation Menu -->
             <ul class="navbar-menu" id="navbarMenu">
                 <li class="has-mega-menu">
-                    <a href="/inventory" class="active" id="inventoryMenuTrigger">INVENTORY</a>
+                    <div class="nav-item-wrapper">
+                        <a href="#" class="active" id="inventoryMenuTrigger">INVENTORY</a>
+                        <span class="mobile-toggle"><i class="fa fa-angle-down"></i></span>
+                    </div>
+                    <ul class="mobile-sub-menu">
+                        <li><a href="/inventory/all">All Inventory</a></li>
+                        <li><a href="/inventory/new-boat-sales">New Boat Sales</a></li>
+                        <li><a href="/inventory/pre-owned-boat-sales">Pre-Owned Boat Sales</a></li>
+                        <li><a href="/inventory/outboards-for-sale">Outboards For Sale</a></li>
+                        <li><a href="/financing">Financing</a></li>
+                        <li><a href="/trade">Sell/Trade my boat</a></li>
+                        <li><a href="/warranties">Warranties</a></li>
+                    </ul>
                 </li>
                 <li class="has-mega-menu">
-                    <a href="/service-storage" id="serviceMenuTrigger">SERVICE & STORAGE</a>
+                    <div class="nav-item-wrapper">
+                        <a href="/service-storage" id="serviceMenuTrigger">SERVICE & STORAGE</a>
+                        <span class="mobile-toggle"><i class="fa fa-angle-down"></i></span>
+                    </div>
+                    <ul class="mobile-sub-menu">
+                        <li><a href="/service-center">Service Center</a></li>
+                        <li><a href="/parts-department">Parts Department</a></li>
+                        <li><a href="/boat-storage">Boat Storage</a></li>
+                        <li><a href="/seasonal-slips">Seasonal Slips</a></li>
+                        <li><a href="/dock-hoists">Dock & Hoists</a></li>
+                    </ul>
                 </li>
-                <li><a href="/pro-shop">PRO SHOP</a></li>
+                <li>
+                    <div class="nav-item-wrapper">
+                        <a href="/pro-shop">PRO SHOP</a>
+                    </div>
+                </li>
                 <li class="has-mega-menu">
-                    <a href="/experiences" id="experiencesMenuTrigger">EXPERIENCES</a>
+                    <div class="nav-item-wrapper">
+                        <a href="/experiences" id="experiencesMenuTrigger">EXPERIENCES</a>
+                        <span class="mobile-toggle"><i class="fa fa-angle-down"></i></span>
+                    </div>
+                    <ul class="mobile-sub-menu">
+                        <li><a href="/private-charters">Private Charters</a></li>
+                        <li><a href="/boat-rentals">Boat Rentals</a></li>
+                        <li><a href="/kayak-sup-rentals">Kayak & SUP Rentals</a></li>
+                        <li><a href="/boat-house">Boat House</a></li>
+                        <li><a href="/freedom-boat-club">Freedom Boat Club</a></li>
+                        <li><a href="/coho">COHO</a></li>
+                        <li><a href="/rental-rules-faq">Rental Rules & FAQ</a></li>
+                    </ul>
                 </li>
             </ul>
-
-            <!-- Location -->
-            <div class="navbar-location" id="locationDropdownTrigger">
-                
-                <div class="navbar-location-text">
-                    <span class="navbar-location-label"><i class="fa fa-map-marker"></i>Your Store</span>
-                    <span class="navbar-location-name" id="currentLocationName">Canandaigua Showroom</span>
-                </div>
-
-                <!-- Location Dropdown -->
-                <div class="location-dropdown" id="locationDropdown">
-                    <div class="location-item selected" data-name="Canandaigua Showroom" data-label="Your Store">
-                        <div class="loc-header">
-                            <p><span>Your Store</span> </p>
-                            <span class="loc-title">Canandaigua Dealership</span>
-                        </div>
-                        <div class="loc-details">
-                            21 Parrish Street<br>
-                            Canandaigua, NY 14424
-                        </div>
-                        <div class="loc-phone">(585) 394-1372</div>
-                    </div>
-
-                    <div class="location-separator"></div>
-
-                    <div class="location-item" data-name="Canandaigua Marina" data-label="Your Store">
-                        <span class="loc-title">Canandaigua Marina</span>
-                        <span class="select-btn">Select Location</span>
-                    </div>
-
-                    <div class="location-item" data-name="Rushford" data-label="Your Store">
-                        <span class="loc-title">Rushford</span>
-                        <span class="select-btn">Select Location</span>
-                    </div>
-
-                    <div class="location-item" data-name="Keuka" data-label="Your Store">
-                        <span class="loc-title">Keuka</span>
-                        <span class="select-btn">Select Location</span>
-                    </div>
-                </div>
-            </div>
             <!-- Right Side -->
             <div class="navbar-right">
+                
+                            <!-- Location -->
+                            <div class="navbar-location" id="locationDropdownTrigger">
+                                
+                                <div class="navbar-location-text">
+                                    <span class="navbar-location-label"><i class="fa fa-map-marker"></i>Your Store</span>
+                                    <span class="navbar-location-name" id="currentLocationName">Canandaigua Showroom</span>
+                                </div>
+                
+                                <!-- Location Dropdown -->
+                                <div class="location-dropdown" id="locationDropdown">
+                                    <div class="location-item selected" data-name="Canandaigua Showroom" data-label="Your Store">
+                                        <div class="loc-header">
+                                            <p><span>Your Store</span> </p>
+                                            <span class="loc-title">Canandaigua Dealership</span>
+                                        </div>
+                                        <div class="loc-details">
+                                            21 Parrish Street<br>
+                                            Canandaigua, NY 14424
+                                        </div>
+                                        <div class="loc-phone">(585) 394-1372</div>
+                                    </div>
+                
+                                    <div class="location-separator"></div>
+                
+                                    <div class="location-item" data-name="Canandaigua Marina" data-label="Your Store">
+                                        <span class="loc-title">Canandaigua Marina</span>
+                                        <span class="select-btn">Select Location</span>
+                                    </div>
+                
+                                    <div class="location-item" data-name="Rushford" data-label="Your Store">
+                                        <span class="loc-title">Rushford</span>
+                                        <span class="select-btn">Select Location</span>
+                                    </div>
+                
+                                    <div class="location-item" data-name="Keuka" data-label="Your Store">
+                                        <span class="loc-title">Keuka</span>
+                                        <span class="select-btn">Select Location</span>
+                                    </div>
+                                </div>
+                            </div>
 
                 <!-- More Button -->
                 <button class="navbar-more-btn" id="moreMenuTrigger">
