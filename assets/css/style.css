@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 @font-face {
   font-family: "Bai Jamjuree";
-  src: url("../fonts/bai-jamjuree/BaiJamjuree-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/bai-jamjuree/BaiJamjuree-ExtraLight.ttf")
+    format("truetype");
   font-weight: 200;
   font-style: normal;
 }
@@ -15,7 +16,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "Bai Jamjuree";
   src: url("../fonts/bai-jamjuree/BaiJamjuree-Regular.ttf") format("truetype");
@@ -23,14 +23,12 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "Bai Jamjuree";
   src: url("../fonts/bai-jamjuree/BaiJamjuree-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: "Bai Jamjuree";
@@ -62,15 +60,36 @@
   --gray-color: #d9d9d9;
   --lightest-gray-color: #fafafa;
   --Blue-bright: #2464db;
-  --Blue: #3086B6;
-  --Red: #D50100;
-  
+  --Blue: #3086b6;
+  --Red: #d50100;
+
   /* Fonts */
   --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
   --font-antonio: "Antonio", sans-serif;
 }
 
 /* Common css start here  */
+.btn-global {
+  display: inline-block;
+  padding: 18px 24px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: var(--Blue, #3086b6);
+}
+
+.btn-global:hover {
+  background-color: #2a77a0;
+  color: var(--White);
+  text-decoration: none;
+}
 
 a {
   text-decoration: none;
@@ -228,7 +247,6 @@ ul {
   position: relative;
 }
 
-
 .navbar-right {
   display: flex;
   align-items: center;
@@ -264,7 +282,7 @@ ul {
 }
 
 .location-dropdown::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   right: 60px;
@@ -295,52 +313,52 @@ ul {
 }
 .loc-header p span {
   color: rgba(0, 0, 0, 0.4);
-text-align: center;
-font-family: "Bai Jamjuree";
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;
-letter-spacing: 0.7px;
-text-transform: uppercase;
+  text-align: center;
+  font-family: "Bai Jamjuree";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
 }
 
 .location-item.selected .loc-title {
-color: var(--Black, #1A1A1A);
-text-align: center;
-font-family: "Bai Jamjuree";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; 
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: "Bai Jamjuree";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .location-item.selected .loc-details {
-color: var(--Black, #1A1A1A);
-text-align: center;
-font-family: Rubik;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-text-decoration-line: underline;
-padding: 16px 0;
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
+  padding: 16px 0;
 }
 
 .location-item.selected .loc-phone {
-color: var(--Red, #D50100);
-text-align: center;
-font-family: "Bai Jamjuree";
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px; 
-text-decoration: none;
+  color: var(--Red, #d50100);
+  text-align: center;
+  font-family: "Bai Jamjuree";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .location-separator {
   height: 1px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   margin: 15px 0;
 }
 
@@ -359,28 +377,28 @@ text-decoration: none;
 }
 
 .location-item .loc-title {
- color: var(--Black, #1A1A1A);
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
+  color: var(--Black, #1a1a1a);
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .location-item .select-btn {
-color: var(--Blue, #3086B6);
-text-align: right;
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; 
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
+  color: var(--Blue, #3086b6);
+  text-align: right;
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 .navbar-location i {
@@ -395,27 +413,27 @@ text-underline-position: from-font;
 }
 
 .navbar-location-label {
-color: var(--Blue, #3086B6);
-font-family: "Bai Jamjuree";
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px; 
+  color: var(--Blue, #3086b6);
+  font-family: "Bai Jamjuree";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .navbar-location-name {
-color: var(--Black, #1A1A1A);
-text-align: right;
-font-family: Rubik;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; 
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
+  color: var(--Black, #1a1a1a);
+  text-align: right;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
 }
 
 .navbar-more-btn {
@@ -433,7 +451,6 @@ text-underline-offset: auto;
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-
 
 .navbar-more-btn .hamburger {
   display: flex;
@@ -473,8 +490,6 @@ text-underline-offset: auto;
   background-color: var(--Blue);
   transition: all 0.3s ease;
 }
-
-
 
 /* ===================================
    Inventory Mega Menu Styles
@@ -537,19 +552,18 @@ text-underline-offset: auto;
 .mega-menu-links li {
   margin-bottom: 22px;
 }
-.mega-menu-links li:nth-child(-n+4) a {
+.mega-menu-links li:nth-child(-n + 4) a {
   font-size: 24px;
 }
 .mega-menu-links li a {
-color: #000;
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-text-transform: capitalize;
+  color: #000;
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: capitalize;
 }
-
 
 /* Right Content Area - Brands Grid */
 .mega-menu-brands {
@@ -592,8 +606,6 @@ text-transform: capitalize;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 
-
-
 /* ===================================
    Service & Storage Mega Menu Styles
    =================================== */
@@ -616,7 +628,6 @@ text-transform: capitalize;
   opacity: 1;
   visibility: visible;
 }
-
 
 /* Service Grid - 5 columns for service cards */
 .service-grid {
@@ -646,22 +657,23 @@ text-transform: capitalize;
   left: 0;
   right: 0;
   padding: 20px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   z-index: 2;
 }
 
 .service-card .service-title {
-color: var(--White, #FFF);
-font-family: Antonio;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 48px; /* 120% */
-text-transform: uppercase;
+  color: var(--White, #fff);
+  font-family: Antonio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  text-transform: uppercase;
 }
-
-
-
 
 /* ===================================
    Experiences Mega Menu Styles
@@ -690,64 +702,64 @@ text-transform: uppercase;
 
 /* CARD BASE */
 .experience-card {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    border-radius: 20px;
-    height: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 100%;
 }
 
 .experience-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* LARGE CARDS */
 .large-card {
-    height: 400px;
+  height: 400px;
 }
 
 /* SMALL CARDS */
 .small-card {
-    height: 122px;
+  height: 122px;
 }
 
 /* OVERLAY */
 .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px;
-    border-radius: 0 0 24px 24px;
-    background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0%, rgba(26, 26, 26, 0.80) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  border-radius: 0 0 24px 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 26, 0) 0%,
+    rgba(26, 26, 26, 0.8) 100%
+  );
 }
 
 .overlay h3 {
-color: var(--White, #FFF);
-font-family: Antonio;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 48px;
-text-transform: uppercase;
+  color: var(--White, #fff);
+  font-family: Antonio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
 }
 .overlaylogo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .overlaylogo img {
-    width: 150px;
-    height: 100px;
-    object-fit: contain;
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
 }
-
-
-
-
 
 /* Rental Rules Link */
 .rental-rules-link {
@@ -755,27 +767,25 @@ text-transform: uppercase;
 }
 
 .rental-rules-link a {
-color: var(--Blue, #3086B6);
-text-align: center;
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;  
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
+  color: var(--Blue, #3086b6);
+  text-align: center;
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 .rental-rules-link a:hover {
   color: var(--Red);
   text-decoration: underline;
 }
-
-
 
 /* ===================================
    Side Mega Menu Styles
@@ -819,23 +829,22 @@ text-underline-position: from-font;
 }
 
 .side-menu-links.primary li a {
-color: #000;
-text-align: right;
+  color: #000;
+  text-align: right;
 
-/* h4 */
-font-family: "Bai Jamjuree";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 133.333% */
-text-transform: capitalize;
+  /* h4 */
+  font-family: "Bai Jamjuree";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
 }
-
 
 /* Divider */
 .side-menu-divider {
   border: 0;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid #d9d9d9;
   margin: 64px 0px 24px 0;
   width: 100%;
 }
@@ -848,14 +857,14 @@ text-transform: capitalize;
 }
 
 .side-menu-title {
-color: rgba(0, 0, 0, 0.4);
-text-align: right;
-font-family: "Bai Jamjuree";
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.7px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: right;
+  font-family: "Bai Jamjuree";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.7px;
 }
 
 .side-menu-links.secondary {
@@ -863,17 +872,16 @@ letter-spacing: 0.7px;
 }
 
 .side-menu-links.secondary li a {
-color: #000;
-text-align: right;
+  color: #000;
+  text-align: right;
 
-/* p */
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
-
 
 /* ===================================
    Hamburger to Close Button Animation
@@ -891,11 +899,254 @@ line-height: 24px; /* 150% */
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Mobile Submenu Styles */
+.mobile-sub-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--Blue);
+  transition: transform 0.3s ease;
+}
+
+.mobile-toggle.active {
+  transform: rotate(180deg);
+}
+
+.nav-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* ===================================
+   Hero Section Styles
+   =================================== */
+.hero-section {
+  position: relative;
+  height: 880px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: var(--font-antonio);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* -----------------------------------Rental Section CSS Start ---------------------------------- */
+.rental-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F7F6FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.rental-card {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: transparent; /* Remove fixed bg props */
+}
+
+.rental-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.rental-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.rental-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: left;
+}
+
+.rental-content h2 {
+  color: var(--White, #FFF);
+  font-family: var(--font-antonio);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.rental-content .btn-global {
+    background-color: var(--Blue);
+    border: none;
+}
+
+.rental-content .btn-global:hover {
+    background-color: #1a4fa0;
+}
+
+/* -----------------------------------Rental Section CSS End ---------------------------------- */
+
+
+/* -----------------------------------Services Links Section CSS Start ---------------------------------- */
+.services-links-section {
+  position: relative;
+  z-index: 2; /* Ensure it scrolls OVER the sticky rental section (z-index 1) */
+  background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.services-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-link-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 840px;
+  overflow: hidden;
+  border-radius: 0; /* Design didn't specify, keeping sharp or default */
+}
+
+.service-link-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0 80px 80px 80px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+}
+
+.card-overlay h3 {
+  color: var(--White, #FFF);
+  font-family: var(--font-antonio); /* Antonio */
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 110% */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* -----------------------------------Services Links Section CSS End ---------------------------------- */
+
+/* -----------------------------------Brand Logos Section CSS Start ---------------------------------- */
+.brand-logos-section {
+    position: relative;
+    z-index: 2; /* Scroll over sticky elements */
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.brand-logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 24px;
+}
+
+.brand-logos-grid img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 24px; 
+}
+/* -----------------------------------Brand Logos Section CSS End ---------------------------------- */
 
 /* Responsive Styles */
 
 @media (max-width: 1400px) {
-   .mega-menu-brands-grid {
+  .mega-menu-brands-grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .service-grid {
@@ -905,17 +1156,18 @@ line-height: 24px; /* 150% */
     right: 10%;
   }
 }
+
 @media (max-width: 1330px) {
-.navbar-logo img {
+  .navbar-logo img {
     width: 200px;
-}
+  }
 }
 
 @media (max-width: 1200px) {
   .navbar-menu {
     gap: 25px;
   }
-  
+
   .navbar-menu li a {
     font-size: 14px;
   }
@@ -934,21 +1186,37 @@ line-height: 24px; /* 150% */
   .service-grid {
     grid-template-columns: repeat(3, 1fr) !important;
   }
-  
+
   .service-card .service-title {
     font-size: 18px;
   }
+  /* -------Services Links Section CSS Start ------- */
+    .service-link-card {
+    height: 600px;
+  }
+  .card-overlay h3 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+  /* -------Services Links Section CSS End --------- */
+
+
+    .brand-logos-grid {
+        column-gap: 60px;
+    }
+
 }
+
 @media (max-width: 1100px) {
-.navbar-menu {
+  .navbar-menu {
     margin-right: 165px;
-}
-.navbar-menu {
+  }
+  .navbar-menu {
     gap: 10px;
-}
-    .navbar-location {
+  }
+  .navbar-location {
     right: 12%;
-}
+  }
 }
 
 @media (max-width: 991px) {
@@ -957,7 +1225,7 @@ line-height: 24px; /* 150% */
   }
   .navbar-right {
     display: none;
-}
+  }
   .navbar-menu {
     position: fixed;
     top: 90px;
@@ -973,25 +1241,25 @@ line-height: 24px; /* 150% */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
   }
-  
+
   .navbar-menu.active {
     left: 0;
   }
-  
+
   .navbar-menu li {
     width: 100%;
   }
-  
+
   .navbar-menu li a {
     font-size: 18px;
     padding: 12px 0;
     width: 100%;
   }
-  
+
   .navbar-location-text {
     display: none;
   }
-  
+
   .navbar-more-btn span:not(.hamburger) {
     display: none;
   }
@@ -1021,20 +1289,105 @@ line-height: 24px; /* 150% */
   .service-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .nav-item-wrapper {
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .navbar-menu li {
+    margin-bottom: 0;
+  }
+
+  .navbar-menu li a {
+    border-bottom: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+    font-size: 20px;
+  }
+
+  .mobile-sub-menu {
+    background: #f9f9f9;
+    padding-left: 0;
+  }
+
+  .mobile-sub-menu li a {
+    padding: 12px 20px !important; /* Indent sub-links */
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-sub-menu li:last-child a {
+    border-bottom: none;
+  }
+/* -------------nav bar css end here -----------  */
+
+
+  /* -------------Hero section css start here -----------  */
+  .hero-section {
+    height: 600px;
+  }
+
+  .hero-content h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  /* -------------Hero section css end here -----------  */
+  
+  /* -------------Rental section css start here -----------  */
+
+    .rental-card {
+        padding: 40px;
+        min-height: 500px;
+        background-attachment: scroll; /* Disable fixed bg on mobile */
+    }
+    
+    .rental-content h2 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+  /* -------------Rental section css end here -----------  */
+
+  /* -------------Services Links Section CSS Start ----------- */
+  .services-links-grid {
+    grid-template-columns: 1fr; /* Stack on mobile */
+    gap: 30px;
+  }
+  .service-link-card {
+    height: 500px;
+  }
+  /* -------------Services Links Section CSS End ------------- */
+
+  
+    .brand-logos-section {
+        padding: 40px 0;
+    }
+    .brand-logos-grid {
+        column-gap: 40px;
+        justify-content: center;
+    }
+    .brand-logos-grid img {
+        width: 150px;
+    }
+    /* -------------Brand Logos Section CSS End ------------- */
 }
 
 @media (max-width: 576px) {
-
-  
   .navbar-logo img {
     height: 40px;
   }
-  
+
   .navbar-menu {
     top: 70px;
     height: calc(100vh - 70px);
   }
-  
+
   .side-mega-menu {
     width: 100%;
     right: -100%;
@@ -1042,7 +1395,7 @@ line-height: 24px; /* 150% */
     height: calc(100vh - 70px);
     padding: 30px 20px;
   }
-.inventory-mega-menu {
+  .inventory-mega-menu {
     top: 70px;
     max-height: calc(100vh - 70px);
   }
@@ -1076,20 +1429,20 @@ line-height: 24px; /* 150% */
     left: 15px;
   }
 
-   .location-dropdown {
+  .location-dropdown {
     width: 280px;
     right: -10px;
     padding: 15px;
   }
-  
+
   .location-dropdown::before {
     right: 25px;
   }
-  
+
   .location-item.selected .loc-title {
     font-size: 20px;
   }
-  
+
   .location-item.selected .loc-phone {
     font-size: 18px;
   }
@@ -1113,71 +1466,67 @@ line-height: 24px; /* 150% */
   .service-card .service-overlay {
     padding: 15px;
   }
+
+  /* -----------------------------------Nav bar css end here ----------------------------------  */
+
+  /* -----------------------------------Hero section css start here ----------------------------------  */
+
+    .hero-section {
+    height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .btn-global {
+    padding: 12px 30px;
+  }
+
+  /* -----------------------------------Hero section css end here ----------------------------------  */
+  /* -----------------------------------Rental section css start here ----------------------------------  */
+
+ 
+    .rental-section {
+        padding: 40px 0;
+    }
+    
+    .rental-card {
+        padding: 30px 20px;
+        border-radius: 16px;
+        min-height: 400px;
+    }
+    
+    .rental-content h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+  /* -----------------------------------Rental section css end here ----------------------------------  */
 }
 
-/* Mobile Submenu Styles */
-.mobile-sub-menu {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
+@media (max-width: 576px) {
+  .service-link-card {
+    height: 400px;
+  }
+  .card-overlay h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
 
-.mobile-toggle {
-  display: none;
-  cursor: pointer;
-  padding: 10px;
-  color: var(--Blue);
-  transition: transform 0.3s ease;
-}
-
-.mobile-toggle.active {
-  transform: rotate(180deg);
-}
-
-.nav-item-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-@media (max-width: 991px) {
-  .nav-item-wrapper {
-     border-bottom: 1px solid #f0f0f0;
-  }
-  
-  .navbar-menu li {
-    margin-bottom: 0;
-  }
-  
-  .navbar-menu li a {
-    border-bottom: none;
-  }
-  
-  .mobile-toggle {
-    display: block;
-    font-size: 20px;
-  }
-  
-  .mobile-sub-menu {
-    background: #f9f9f9;
-    padding-left: 0;
-  }
-  
-  .mobile-sub-menu li a {
-    padding: 12px 20px !important; /* Indent sub-links */
-    font-size: 16px;
-    font-weight: 500;
-    color: #555;
-    border-bottom: 1px solid #eee;
-    display: block;
-    width: 100%;
-  }
-  
-  .mobile-sub-menu li:last-child a {
-    border-bottom: none;
-  }
+  /* -------------Brand Logos Section CSS Start ------------- */
+    .brand-logos-grid {
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .brand-logos-grid img {
+        /* create 2 col layout on mobile */
+        width: 120px;
+        max-width: 140px;
+        height: 60px; /* Limit height so they line up better */
+        margin-bottom: 0;
+    }
+    /* -------------Brand Logos Section CSS End ------------- */
 }
 
