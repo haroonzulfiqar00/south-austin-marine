@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar-seager">
+        <div class="container-seager-fluid">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a href="/">
+                    <img src="./assets/images/mega-menu/seager-logo.jpg" alt="Seager Marine Logo">
+                </a>
+            </div>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggle" id="navbarToggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="navbar-menu" id="navbarMenu">
+                <li class="has-mega-menu">
+                    <a href="/inventory" class="active" id="inventoryMenuTrigger">INVENTORY</a>
+                </li>
+                <li class="has-mega-menu">
+                    <a href="/service-storage" id="serviceMenuTrigger">SERVICE & STORAGE</a>
+                </li>
+                <li><a href="/pro-shop">PRO SHOP</a></li>
+                <li class="has-mega-menu">
+                    <a href="/experiences" id="experiencesMenuTrigger">EXPERIENCES</a>
+                </li>
+            </ul>
+
+            <!-- Location -->
+            <div class="navbar-location" id="locationDropdownTrigger">
+                
+                <div class="navbar-location-text">
+                    <span class="navbar-location-label"><i class="fa fa-map-marker"></i>Your Store</span>
+                    <span class="navbar-location-name" id="currentLocationName">Canandaigua Showroom</span>
+                </div>
+
+                <!-- Location Dropdown -->
+                <div class="location-dropdown" id="locationDropdown">
+                    <div class="location-item selected" data-name="Canandaigua Showroom" data-label="Your Store">
+                        <div class="loc-header">
+                            <p><span>Your Store</span> </p>
+                            <span class="loc-title">Canandaigua Dealership</span>
+                        </div>
+                        <div class="loc-details">
+                            21 Parrish Street<br>
+                            Canandaigua, NY 14424
+                        </div>
+                        <div class="loc-phone">(585) 394-1372</div>
+                    </div>
+
+                    <div class="location-separator"></div>
+
+                    <div class="location-item" data-name="Canandaigua Marina" data-label="Your Store">
+                        <span class="loc-title">Canandaigua Marina</span>
+                        <span class="select-btn">Select Location</span>
+                    </div>
+
+                    <div class="location-item" data-name="Rushford" data-label="Your Store">
+                        <span class="loc-title">Rushford</span>
+                        <span class="select-btn">Select Location</span>
+                    </div>
+
+                    <div class="location-item" data-name="Keuka" data-label="Your Store">
+                        <span class="loc-title">Keuka</span>
+                        <span class="select-btn">Select Location</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side -->
+            <div class="navbar-right">
+
+                <!-- More Button -->
+                <button class="navbar-more-btn" id="moreMenuTrigger">
+                    <span>MORE</span>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Mega Menu -->
+    <div class="side-mega-menu" id="sideMegaMenu">
+        <div class="side-menu-content">
+            <ul class="side-menu-links primary">
+                <li><a href="/pro-shop">Pro Shop</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/news-articles">News & Articles</a></li>
+            </ul>
+            
+            <hr class="side-menu-divider">
+            
+            <div class="side-menu-section">
+                <h4 class="side-menu-title">LOCATIONS</h4>
+                <ul class="side-menu-links secondary">
+                    <li><a href="/locations/canandaigua-showroom">Canandaigua Showroom</a></li>
+                    <li><a href="/locations/canandaigua-marina">Canandaigua Marina</a></li>
+                    <li><a href="/locations/canandaigua-east-lake-road">Canandaigua East Lake Road</a></li>
+                    <li><a href="/locations/keuka-lake">Keuka Lake</a></li>
+                    <li><a href="/locations/rushford-lake">Rushford Lake</a></li>
+                </ul>
+            </div>
+            
+            <hr class="side-menu-divider">
+            
+            <ul class="side-menu-links secondary">
+                <li><a href="/meet-our-staff">Meet Our Staff</a></li>
+                <li><a href="/employment">Employment</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Inventory Mega Menu -->
+    <div class="inventory-mega-menu" id="inventoryMegaMenu">
+        <div class="container-seager-md">
+            <div class="mega-menu-content align-items-center">
+                <!-- Left Sidebar -->
+                <div class="mega-menu-sidebar">
+                    <ul class="mega-menu-links ">
+                        <li><a href="/inventory/all">All Inventory</a></li>
+                        <li><a href="/inventory/new-boat-sales">New Boat Sales</a></li>
+                        <li><a href="/inventory/pre-owned-boat-sales">Pre-Owned Boat Sales</a></li>
+                        <li><a href="/inventory/outboards-for-sale">Outboards For Sale</a></li>
+                        <li class="mt-lg-5"><a href="/financing">Financing</a></li>
+                        <li><a href="/trade">Sell/Trade my boat</a></li>
+                        <li><a href="/warranties">Warranties</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Content Area -->
+                <div class="mega-menu-brands">
+                    <div class="mega-menu-brands-grid">
+                        <!-- Brand Card 1 -->
+                        <a href="/inventory/lund" class="brand-card">
+                            <img src="./assets/images/mega-menu/lund-img.png" alt="Lund Boats" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Lund_white_large.png" alt="Lund Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 2 -->
+                        <a href="/inventory/avalon" class="brand-card">
+                            <img src="./assets/images/mega-menu/avalon-img.png" alt="Avalon Pontoons" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Avalon pontoons logo.png" alt="Avalon Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 3 -->
+                        <a href="/inventory/nautique" class="brand-card">
+                            <img src="./assets/images/mega-menu/Nautique-img.png" alt="Nautique" class="brand-bg">
+                            <img src="./assets/images/mega-menu/NautiqueLogo-white.png" alt="Nautique Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 4 -->
+                        <a href="/inventory/scout" class="brand-card">
+                            <img src="./assets/images/mega-menu/scout-img.png" alt="Scout" class="brand-bg">
+                            <img src="./assets/images/mega-menu/scout-logo-wt.png" alt="Scout Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 5 -->
+                        <a href="/inventory/regal" class="brand-card">
+                            <img src="./assets/images/mega-menu/regal-img.png" alt="Regal" class="brand-bg">
+                            <img src="./assets/images/mega-menu/Regal_Logo-stacked-wt.png" alt="Regal Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 6 -->
+                        <a href="/inventory/bennington" class="brand-card">
+                            <img src="./assets/images/mega-menu/bennington -img.png" alt="Bennington" class="brand-bg">
+                            <img src="./assets/images/mega-menu/bennington logo-wt.png" alt="Bennington Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 7 -->
+                        <a href="/inventory/regulator" class="brand-card">
+                            <img src="./assets/images/mega-menu/regulator-img.png" alt="Regulator" class="brand-bg">
+                            <img src="./assets/images/mega-menu/regulator-logo-white.png" alt="Regulator Logo" class="brand-logo">
+                        </a>
+
+                        <!-- Brand Card 8 -->
+                        <a href="/inventory/honda-marine" class="brand-card">
+                            <img src="./assets/images/mega-menu/hondaMarine-img.png" alt="Honda Marine" class="brand-bg">
+                            <img src="./assets/images/mega-menu/hondaMarine-wt.png" alt="Honda Marine Logo" class="brand-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service & Storage Mega Menu -->
+    <div class="service-mega-menu" id="serviceMegaMenu">
+        <div class="container-desktop">
+            <div class="mega-menu-content align-items-center">
+
+                <!-- Right Content Area -->
+                <div class="mega-menu-brands">
+                    <div class="mega-menu-brands-grid service-grid">
+                        <!-- Service Card 1 -->
+                        <a href="/service-center" class="service-card">
+                            <img src="./assets/images/mega-menu/nav-service.png" alt="Service Center" class="service-bg">
+                            <div class="service-overlay">
+                                <h3 class="service-title">SERVICE<br>CENTER</h3>
+                            </div>
+                        </a>
+
+                        <!-- Service Card 2 -->
+                        <a href="/parts-department" class="service-card">
+                            <img src="./assets/images/mega-menu/nav-parts.png" alt="Parts Department" class="service-bg">
+                            <div class="service-overlay">
+                                <h3 class="service-title">PARTS<br>DEPARTMENT</h3>
+                            </div>
+                        </a>
+
+                        <!-- Service Card 3 -->
+                        <a href="/boat-storage" class="service-card">
+                            <img src="./assets/images/mega-menu/nav-storage.png" alt="Boat Storage" class="service-bg">
+                            <div class="service-overlay">
+                                <h3 class="service-title">BOAT<br>STORAGE</h3>
+                            </div>
+                        </a>
+
+                        <!-- Service Card 4 -->
+                        <a href="/seasonal-slips" class="service-card">
+                            <img src="./assets/images/mega-menu/nav-seasonal.png" alt="Seasonal Slips" class="service-bg">
+                            <div class="service-overlay">
+                                <h3 class="service-title">SEASONAL<br>SLIPS</h3>
+                            </div>
+                        </a>
+
+                        <!-- Service Card 5 -->
+                        <a href="/dock-hoists" class="service-card">
+                            <img src="./assets/images/mega-menu/nav-docks.png" alt="Dock & Hoists" class="service-bg">
+                            <div class="service-overlay">
+                                <h3 class="service-title">DOCK &<br>HOISTS</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experiences Mega Menu -->
+    <div class="experiences-mega-menu" id="experiencesMegaMenu">
+        <div class="container-desktop">
+            <div class="mega-menu-content align-items-center">
+                <!-- Content Area -->
+                <!-- <div class="mega-menu-brands">
+                    <div class="mega-menu-brands-grid experiences-grid">
+
+                        <a href="/private-charters" class="experience-card">
+                            <img src="./assets/images/mega-menu/nav-charters.png" alt="Private Charters" class="experience-bg">
+                            <div class="experience-overlay">
+                                <h3 class="experience-title">PRIVATE<br>CHARTERS</h3>
+                            </div>
+                        </a>
+
+                       
+                        <a href="/boat-rentals" class="experience-card">
+                            <img src="./assets/images/mega-menu/nav-rentals.png" alt="Boat Rentals" class="experience-bg">
+                            <div class="experience-overlay">
+                                <h3 class="experience-title">BOAT<br>RENTALS</h3>
+                            </div>
+                        </a>
+
+                        
+                        <a href="/kayak-sup-rentals" class="experience-card">
+                            <img src="./assets/images/mega-menu/nav-kayaks.png" alt="Kayak & SUP Rentals" class="experience-bg">
+                            <div class="experience-overlay">
+                                <h3 class="experience-title">KAYAK & SUP<br>RENTALS</h3>
+                            </div>
+                        </a>
+
+                        
+                        <a href="/boat-house" class="experience-card">
+                            <img src="./assets/images/mega-menu/boat-house.png" alt="Boat House" class="experience-bg">
+                            <div class="experience-overlay">
+                                <h3 class="experience-title">BOAT HOUSE</h3>
+                            </div>
+                        </a>
+
+                        
+                        <a href="/freedom-boat-club" class="experience-card">
+                            <img src="./assets/images/mega-menu/freedom-boat.png" alt="Freedom Boat Club" class="experience-bg">
+                            <div class="experience-overlay">
+                                <h3 class="experience-title">FREEDOM<br>BOAT CLUB</h3>
+                            </div>
+                        </a>
+
+                        
+                        <a href="/coho" class="experience-card">
+                            <img src="./assets/images/mega-menu/coho.png" alt="COHO" class="experience-bg">
+                            <div class="experience-overlay">
+                                <h3 class="experience-title">COHO</h3>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="rental-rules-link">
+                        <a href="/rental-rules-faq">Rental Rules & FAQ</a>
+                    </div>
+                </div> -->
+
+                <div class="container-seager mega-menu-wrapper px-lg-5">
+    <div class="row">
+
+        <!-- LEFT 3 LARGE CARDS -->
+        <div class="col-lg-9">
+            <div class="row">
+
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4 pr-lg-0">
+                    <a href="/private-charters" class="experience-card large-card">
+                        <img src="./assets/images/mega-menu/nav-charters.png" alt="">
+                        <div class="overlay">
+                            <h3>PRIVATE<br>CHARTERS</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4 pr-lg-0">
+                    <a href="/boat-rentals" class="experience-card large-card">
+                        <img src="./assets/images/mega-menu/nav-rentals.png" alt="">
+                        <div class="overlay">
+                            <h3>BOAT<br>RENTALS</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4 pr-lg-0">
+                    <a href="/kayak-sup-rentals" class="experience-card large-card">
+                        <img src="./assets/images/mega-menu/nav-kayaks.png" alt="">
+                        <div class="overlay">
+                            <h3>KAYAK & SUP<br>RENTALS</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- RIGHT 3 SMALL STACKED CARDS -->
+        <div class="col-lg-3">
+            
+            <a href="/boat-house" class="experience-card small-card mb-3">
+                <img src="./assets/images/mega-menu/boat-house.png" alt="">
+                <div class="overlaylogo text-center p-3">
+                    <img src="./assets/images/mega-menu/boat-house-logo.png" alt="boat house logo">
+                </div>
+            </a>
+
+            <a href="/freedom-boat-club" class="experience-card small-card mb-3">
+                <img src="./assets/images/mega-menu/freedom-boat.png" alt="">
+                <div class="overlaylogo text-center p-3">
+                    <img src="./assets/images/mega-menu/freedom-logo.png" alt="freedom boat club logo">
+                </div>
+            </a>
+
+            <a href="/coho" class="experience-card small-card">
+                <img src="./assets/images/mega-menu/coho.png" alt="">
+                <div class="overlaylogo text-center p-3">
+                    <img src="./assets/images/mega-menu/coho-logo.png" alt="coho logo">
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Rental Rules Link -->
+
+    <div class="rental-rules-link">
+        <a href="/rental-rules-faq">Rental Rules & FAQ</a>
+    </div>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
