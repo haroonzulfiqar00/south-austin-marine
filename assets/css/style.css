@@ -985,17 +985,16 @@ ul {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-
 /* -----------------------------------Rental Section CSS Start ---------------------------------- */
 .rental-section {
   width: 100%;
   min-height: 100vh;
-  background-color: #F7F6FA;
+  background-color: #f7f6fa;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 0;
-  position: -webkit-sticky; 
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -1010,18 +1009,18 @@ ul {
   display: flex;
   align-items: center;
   padding: 60px 80px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   background: transparent; /* Remove fixed bg props */
 }
 
 .rental-bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .rental-overlay {
@@ -1042,7 +1041,7 @@ ul {
 }
 
 .rental-content h2 {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-family: var(--font-antonio);
   font-size: 80px;
   font-style: normal;
@@ -1050,20 +1049,19 @@ ul {
   line-height: 88px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .rental-content .btn-global {
-    background-color: var(--Blue);
-    border: none;
+  background-color: var(--Blue);
+  border: none;
 }
 
 .rental-content .btn-global:hover {
-    background-color: #1a4fa0;
+  background-color: #1a4fa0;
 }
 
 /* -----------------------------------Rental Section CSS End ---------------------------------- */
-
 
 /* -----------------------------------Services Links Section CSS Start ---------------------------------- */
 .services-links-section {
@@ -1101,12 +1099,16 @@ ul {
   left: 0px;
   width: 100%;
   padding: 0 80px 80px 80px;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   pointer-events: none;
 }
 
 .card-overlay h3 {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   font-family: var(--font-antonio); /* Antonio */
   font-size: 80px;
   font-style: normal;
@@ -1120,28 +1122,346 @@ ul {
 
 /* -----------------------------------Brand Logos Section CSS Start ---------------------------------- */
 .brand-logos-section {
-    position: relative;
-    z-index: 2; /* Scroll over sticky elements */
-    background-color: #fff;
-    padding: 40px 0;
+  position: relative;
+  z-index: 2; /* Scroll over sticky elements */
+  background-color: #fff;
+  padding: 40px 0;
 }
 
 .brand-logos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 120px;
-    row-gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 120px;
+  row-gap: 24px;
 }
 
 .brand-logos-grid img {
-    width: 200px;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 24px; 
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 24px;
 }
 /* -----------------------------------Brand Logos Section CSS End ---------------------------------- */
+
+/* -----------------------------------New Arrivals Section CSS Start ---------------------------------- */
+.new-arrivals-section {
+  padding: 40px 0;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.new-arrivals-info h2 {
+  color: var(--Black, #1a1a1a);
+  font-family: var(--font-antonio);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.new-arrivals-info p {
+  color: #666;
+  font-family: var(--font-bai-jamjuree);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.boat-card {
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.boat-img {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f0f0; /* Fallback */
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.boat-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boat-details h3 {
+  color: var(--Black, #1a1a1a);
+  font-family: var(--font-bai-jamjuree); /* Bai Jamjuree */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.boat-details .price {
+  color: #1a1a1a;
+  font-family: var(--font-bai-jamjuree);
+  font-size: 14px;
+  font-weight: 400; /* Regular weight */
+  margin-bottom: 2px;
+}
+
+.boat-details .specs {
+  color: #1a1a1a;
+  font-family: var(--font-bai-jamjuree);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* -----------------------------------New Arrivals Section CSS End ---------------------------------- */
+
+.storage-seasonal-sec .service-link-card {
+  height: 720px;
+}
+.storage-seasonal-sec .services-links-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.storage-seasonal-sec .card-overlay {
+  bottom: unset;
+  top: 0px;
+  padding: 120px 0px 0px 120px;
+  background: unset;
+}
+
+
+
+/* -----------------------------------Generic Split Feature Section CSS Start ---------------------------------- */
+.split-feature-section-wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding: 60px 0;
+  position: relative;
+  z-index: 2; /* Scroll over sticky elements */
+}
+
+/* Generic Large Title Class */
+.section-title-large {
+  color: var(--Black, #1a1a1a);
+
+  /* h2 */
+  font-family: Antonio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.feature-content-box {
+  max-width: 600px;
+}
+/* Generic Text Class */
+.section-text-regular {
+  color: var(--Black, #1a1a1a);
+
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.feature-image-box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* -----------------------------------Generic Split Feature Section CSS End ---------------------------------- */
+
+.welcome-section {
+    position: relative;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.welcome-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 59, 87, 0.85); /* Dark blue overlay based on image */
+    z-index: 1;
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.welcome-certification img {
+    height: 80px; 
+    width: auto;
+}
+
+.welcome-content h2 {
+    font-family: var(--font-antonio);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.welcome-content h3 {
+    font-family: var(--font-bai-jamjuree);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.welcome-content p {
+    font-family: var(--font-bai-jamjuree);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Specific button style for this section if needed, otherwise uses global */
+.welcome-content .btn-global {
+    background-color: #3B82B5;
+}
+.welcome-content .btn-global:hover {
+    background-color: #2a6a96;
+}
+
+
+.waterfront-solutions-sec .rental-content h3 {
+color: var(--White, #FFF);
+font-family: "Bai Jamjuree";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; 
+margin-bottom: 8px;
+}
+.waterfront-solutions-sec .rental-content p {
+color: var(--White, #FFF);
+font-family: "Bai Jamjuree";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+margin-bottom: 40px;
+}
+
+
+/* -----------------------------------Welcome Section CSS Start ---------------------------------- */
+
+.welcome-section {
+    position: relative;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.welcome-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 91, 129, 0.7); 
+    z-index: 1;
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.welcome-certification img {
+    height: 120px; 
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.welcome-content h2 {
+    font-family: var(--font-antonio);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.welcome-content h3 {
+    font-family: var(--font-bai-jamjuree);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.welcome-content p {
+    font-family: var(--font-bai-jamjuree);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: #fff;
+    max-width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button override for this section */
+.welcome-content .btn-global {
+    background-color: #3B82B5; 
+    border: none;
+}
+.welcome-content .btn-global:hover {
+    background-color: #2a6a96;
+}
+
+/* -----------------------------------Welcome Section CSS End ---------------------------------- */
 
 /* Responsive Styles */
 
@@ -1191,7 +1511,7 @@ ul {
     font-size: 18px;
   }
   /* -------Services Links Section CSS Start ------- */
-    .service-link-card {
+  .service-link-card {
     height: 600px;
   }
   .card-overlay h3 {
@@ -1200,11 +1520,9 @@ ul {
   }
   /* -------Services Links Section CSS End --------- */
 
-
-    .brand-logos-grid {
-        column-gap: 60px;
-    }
-
+  .brand-logos-grid {
+    column-gap: 60px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1220,6 +1538,10 @@ ul {
 }
 
 @media (max-width: 991px) {
+   .welcome-section {
+        height: auto;
+        padding: 60px 0;
+    }
   .navbar-toggle {
     display: block;
   }
@@ -1324,8 +1646,7 @@ ul {
   .mobile-sub-menu li:last-child a {
     border-bottom: none;
   }
-/* -------------nav bar css end here -----------  */
-
+  /* -------------nav bar css end here -----------  */
 
   /* -------------Hero section css start here -----------  */
   .hero-section {
@@ -1338,19 +1659,19 @@ ul {
   }
 
   /* -------------Hero section css end here -----------  */
-  
+
   /* -------------Rental section css start here -----------  */
 
-    .rental-card {
-        padding: 40px;
-        min-height: 500px;
-        background-attachment: scroll; /* Disable fixed bg on mobile */
-    }
-    
-    .rental-content h2 {
-        font-size: 56px;
-        line-height: 64px;
-    }
+  .rental-card {
+    padding: 40px;
+    min-height: 500px;
+    background-attachment: scroll; /* Disable fixed bg on mobile */
+  }
+
+  .rental-content h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
 
   /* -------------Rental section css end here -----------  */
 
@@ -1364,18 +1685,21 @@ ul {
   }
   /* -------------Services Links Section CSS End ------------- */
 
-  
-    .brand-logos-section {
-        padding: 40px 0;
-    }
-    .brand-logos-grid {
-        column-gap: 40px;
-        justify-content: center;
-    }
-    .brand-logos-grid img {
-        width: 150px;
-    }
-    /* -------------Brand Logos Section CSS End ------------- */
+  .brand-logos-section {
+    padding: 40px 0;
+  }
+  .brand-logos-grid {
+    column-gap: 40px;
+    justify-content: center;
+  }
+  .brand-logos-grid img {
+    width: 150px;
+  }
+  /* -------------Brand Logos Section CSS End ------------- */
+
+  .feature-content-box {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1471,7 +1795,7 @@ ul {
 
   /* -----------------------------------Hero section css start here ----------------------------------  */
 
-    .hero-section {
+  .hero-section {
     height: 500px;
   }
 
@@ -1487,26 +1811,22 @@ ul {
   /* -----------------------------------Hero section css end here ----------------------------------  */
   /* -----------------------------------Rental section css start here ----------------------------------  */
 
- 
-    .rental-section {
-        padding: 40px 0;
-    }
-    
-    .rental-card {
-        padding: 30px 20px;
-        border-radius: 16px;
-        min-height: 400px;
-    }
-    
-    .rental-content h2 {
-        font-size: 36px;
-        line-height: 44px;
-    }
+  .rental-section {
+    padding: 40px 0;
+  }
+
+  .rental-card {
+    padding: 30px 20px;
+    border-radius: 16px;
+    min-height: 400px;
+  }
+
+  .rental-content h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
 
   /* -----------------------------------Rental section css end here ----------------------------------  */
-}
-
-@media (max-width: 576px) {
   .service-link-card {
     height: 400px;
   }
@@ -1516,17 +1836,130 @@ ul {
   }
 
   /* -------------Brand Logos Section CSS Start ------------- */
-    .brand-logos-grid {
-        column-gap: 20px;
-        row-gap: 20px;
-    }
-    .brand-logos-grid img {
-        /* create 2 col layout on mobile */
-        width: 120px;
-        max-width: 140px;
-        height: 60px; /* Limit height so they line up better */
-        margin-bottom: 0;
-    }
-    /* -------------Brand Logos Section CSS End ------------- */
+  .brand-logos-grid {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .brand-logos-grid img {
+    /* create 2 col layout on mobile */
+    width: 120px;
+    max-width: 140px;
+    height: 60px; /* Limit height so they line up better */
+    margin-bottom: 0;
+  }
+  /* -------------Brand Logos Section CSS End ------------- */
+
+  /* -------------New Arrivals Section CSS Start ------------- */
+  .new-arrivals-info h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .new-arrivals-section {
+    padding: 40px 0;
+  }
+  .boat-img {
+    height: 200px;
+  }
+  /* -------------New Arrivals Section CSS End ------------- */
+  /* -------------Generic Split Feature Section CSS Start ------------- */
+  .section-title-large {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .split-feature-section-wrapper {
+    padding: 40px 0;
+  }
+  /* -------------Generic Split Feature Section CSS End ------------- */
+  
+  /* -------------Welcome Section CSS Start ------------- */
+  .welcome-section {
+    height: auto;
+    padding: 60px 0;
+  }
+  .welcome-content h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .welcome-content h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  /* -------------Welcome Section CSS End ------------- */
 }
 
+
+
+/* -----------------------------------Quick Links Section CSS Start ---------------------------------- */
+
+.quick-links-section {
+    padding: 80px 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.quick-link-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.quick-link-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.quick-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 0 40px 40px;
+    pointer-events: none;
+}
+
+.quick-card-overlay h3 {
+color: var(--White, #FFF); 
+font-family: Antonio;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px; 
+text-transform: uppercase;
+}
+
+/* -----------------------------------Quick Links Section CSS End ---------------------------------- */
+
+@media (max-width: 991px) {
+  /* -------------Quick Links Section CSS Start ------------- */
+  .quick-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .quick-link-card {
+    height: 200px;
+  }
+  .quick-card-overlay h3 {
+    font-size: 20px;
+  }
+  /* -------------Quick Links Section CSS End ------------- */
+}
+
+@media (max-width: 576px) {
+  /* -------------Quick Links Section CSS Start ------------- */
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+  /* -------------Quick Links Section CSS End ------------- */
+}
