@@ -247,4 +247,27 @@ $(document).ready(function() {
         });
     }
 
+
+    // ===================================
+    // Mobile Footer Accordion
+    // ===================================
+    $('.footer-col-title').on('click', function() {
+        if ($(window).width() <= 991) {
+            // Toggle active class on parent
+            $(this).closest('.custom-col-5').toggleClass('active');
+            // Toggle the list
+            $(this).next('.footer-links-list').slideToggle(300);
+        }
+    });
+
+    // ===================================
+    // Reset footer accordion on window resize
+    // ===================================
+    $(window).on('resize', function() {
+        if ($(window).width() > 991) {
+            $('.footer-links-list').removeAttr('style');
+            $('.custom-col-5').removeClass('active');
+        }
+    });
+
 });

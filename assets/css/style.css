@@ -943,7 +943,7 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .video-container video {
@@ -986,6 +986,10 @@ ul {
 }
 
 /* -----------------------------------Rental Section CSS Start ---------------------------------- */
+.sec-space {
+  height: 100vh;
+  width: 100%;
+}
 .rental-section {
   width: 100%;
   min-height: 100vh;
@@ -995,7 +999,7 @@ ul {
   justify-content: center;
   padding: 40px 0;
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
 }
@@ -1354,6 +1358,9 @@ ul {
   background-color: #2a6a96;
 }
 
+.waterfront-solutions-sec {
+  position: sticky !important;
+}
 .waterfront-solutions-sec .rental-content h3 {
   color: var(--White, #fff);
   font-family: "Bai Jamjuree";
@@ -1459,6 +1466,294 @@ ul {
 
 /* -----------------------------------Welcome Section CSS End ---------------------------------- */
 
+/* -----------------------------------Quick Links Section CSS Start ---------------------------------- */
+
+.quick-links-section {
+  padding: 80px 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+
+.quick-link-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.quick-link-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quick-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 0 40px 40px;
+  pointer-events: none;
+}
+
+.quick-card-overlay h3 {
+  color: var(--White, #fff);
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------Quick Links Section CSS End ---------------------------------- */
+
+/* -----------------------------------Desktop Footer CSS Start ---------------------------------- */
+
+.desktop-footer {
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.footer-top-section {
+  border-top: 1px solid var(--Lightest-Gray, #f7f6fa);
+  background: var(--White, #fff);
+  padding: 60px 0;
+  width: 100%;
+}
+.footer-connect-box {
+  border-radius: 24px;
+  background: var(--Lightest-Gray, #f7f6fa);
+  padding: 50px 40px;
+}
+.footer-social-box {
+  border-radius: 24px;
+  background: var(--Lightest-Gray, #f7f6fa);
+  padding: 50px 60px;
+}
+
+.footer-contact-box {
+  border-radius: 24px;
+  background: var(--Lightest-Gray, #f7f6fa);
+  padding: 50px 60px;
+  height: 100%;
+}
+.footer-overline {
+  color: var(--Black, #1a1a1a);
+  font-family: "Bai Jamjuree";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.footer-heading {
+  color: var(--Black, #1a1a1a);
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 126.667% */
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.footer-heading-sm {
+  color: #1a1a1a;
+  font-family: var(--font-antonio);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  color: var(--Black, #1a1a1a);
+
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 24px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 480px;
+}
+
+.newsletter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 10px 0;
+  font-family: var(--font-bai-jamjuree);
+  font-size: 14px;
+  color: #1a1a1a;
+  outline: none;
+  margin-right: 20px;
+}
+
+.newsletter-input::placeholder {
+  color: #999;
+}
+
+.footer-social-box .social-icons {
+  display: flex;
+  gap: 4px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--Blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.border-left-light {
+  border-left: 2px solid #fff; /* White divider as seen in design */
+}
+
+.footer-logo {
+  max-width: 186px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-label {
+  color: var(--Black, #1a1a1a);
+
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.contact-phone {
+  color: var(--Blue, #3086b6);
+  text-align: right;
+
+  /* h5 */
+  font-family: "Bai Jamjuree";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+
+/* Middle & Bottom Sections */
+.footer-links-section {
+  padding: 40px 0 40px 0;
+}
+
+/* Custom 5 column grid for footer links */
+.custom-col-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 0 15px;
+}
+
+.footer-col-title {
+  color: var(--Black, #1a1a1a);
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 16px;
+}
+
+.footer-links-list li a {
+  color: var(--Black, #1a1a1a);
+
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.footer-bottom-section {
+  padding: 16px 0;
+  border-top: 1px solid #f7f6fa;
+}
+
+.copyright-text {
+  color: oklab(0% 0 0 / 0.6);
+
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.copyright-text a {
+  color: oklab(0% 0 0 / 0.6);
+  text-decoration: none;
+}
+
 /* Responsive Styles */
 
 @media (max-width: 1400px) {
@@ -1518,6 +1813,11 @@ ul {
 
   .brand-logos-grid {
     column-gap: 60px;
+  }
+
+  .custom-col-5 {
+    flex: 0 0 20%; /* Keep 5 col layout on large tablets if space permits */
+    max-width: 20%;
   }
 }
 
@@ -1653,7 +1953,30 @@ ul {
     font-size: 56px;
     line-height: 64px;
   }
-
+  .storage-seasonal-sec .services-links-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .storage-seasonal-sec .service-link-card {
+    height: 420px;
+  }
+  .storage-seasonal-sec .card-overlay {
+    padding: 50px 0px 0px 50px;
+  }
+  .feature-content-box {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .new-arrivals-info {
+    text-align: center;
+  }
+  .welcome-content p {
+    margin-bottom: 20px;
+    color: #fff;
+    max-width: 100%;
+  }
+  .footer-top-section {
+    padding: 40px 0;
+  }
   /* -------------Hero section css end here -----------  */
 
   /* -------------Rental section css start here -----------  */
@@ -1696,6 +2019,87 @@ ul {
   .feature-content-box {
     max-width: 100%;
   }
+
+  /* -------------Quick Links Section CSS Start ------------- */
+  .quick-links-section {
+    padding: 40px 0;
+}
+  .quick-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .quick-link-card {
+    height: 200px;
+  }
+  .quick-card-overlay h3 {
+    font-size: 20px;
+  }
+  /* -------------Quick Links Section CSS End ------------- */
+
+  /* Stack columns vertically */
+  .footer-links-section .row {
+    flex-direction: column;
+  }
+
+  /* Make each column full width and add border */
+  .custom-col-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  .custom-col-5:last-child {
+    border-bottom: none;
+  }
+
+  /* Make title clickable and add flex for icon alignment */
+  .footer-col-title {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 20px 0;
+    user-select: none;
+  }
+
+  /* Add chevron icon using FontAwesome */
+  .footer-col-title::after {
+    content: "\f107"; /* fa-angle-down */
+    font-family: "FontAwesome";
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    color: var(--Blue);
+  }
+
+  /* Rotate icon when active */
+  .custom-col-5.active .footer-col-title::after {
+    transform: rotate(180deg);
+  }
+
+  /* Hide links by default */
+  .footer-links-list {
+    display: none;
+    padding-bottom: 20px;
+  }
+.footer-connect-box {
+    padding: 30px;
+    text-align: center;
+}
+.footer-social-box {
+    padding: 30px;
+    text-align: center;
+}
+.footer-social-box .social-icons {
+    justify-content: center;
+}
+.copyright-text {
+    text-align: center;
+}
+.footer-contact-box {
+    padding: 30px;
+}
 }
 
 @media (max-width: 576px) {
@@ -1881,325 +2285,22 @@ ul {
     line-height: 26px;
   }
   /* -------------Welcome Section CSS End ------------- */
-}
 
-/* -----------------------------------Quick Links Section CSS Start ---------------------------------- */
-
-.quick-links-section {
-  padding: 80px 0;
-  background-color: #fff;
-  position: relative;
-  z-index: 2;
-}
-
-.quick-links-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
-}
-
-.quick-link-card {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.quick-link-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.quick-card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0px 0 40px 40px;
-  pointer-events: none;
-}
-
-.quick-card-overlay h3 {
-  color: var(--White, #fff);
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-}
-
-/* -----------------------------------Quick Links Section CSS End ---------------------------------- */
-
-@media (max-width: 991px) {
-  /* -------------Quick Links Section CSS Start ------------- */
-  .quick-links-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  .quick-link-card {
-    height: 200px;
-  }
-  .quick-card-overlay h3 {
-    font-size: 20px;
-  }
-  /* -------------Quick Links Section CSS End ------------- */
-}
-
-@media (max-width: 576px) {
   /* -------------Quick Links Section CSS Start ------------- */
   .quick-links-grid {
     grid-template-columns: 1fr;
   }
   /* -------------Quick Links Section CSS End ------------- */
-}
-/* -----------------------------------Desktop Footer CSS Start ---------------------------------- */
 
-.desktop-footer {
-  width: 100%;
-  background-color: #fff;
-  z-index: 2;
-  position: relative;
 }
 
-.footer-top-section {
-  border-top: 1px solid var(--Lightest-Gray, #f7f6fa);
-  background: var(--White, #fff);
-  padding: 60px 0;
-  width: 100%;
+@media (max-width: 450px) {
+  /* -------------Footer CSS Start ------------- */
+  .contact-item {
+    flex-direction: column;
 }
-.footer-connect-box {
-  border-radius: 24px;
-  background: var(--Lightest-Gray, #f7f6fa);
-  padding: 50px 40px;
-}
-.footer-social-box {
-  border-radius: 24px;
-  background: var(--Lightest-Gray, #f7f6fa);
-  padding: 50px 60px;
-}
-
-.footer-contact-box {
-  border-radius: 24px;
-  background: var(--Lightest-Gray, #f7f6fa);
-  padding: 50px 60px;
-  height: 100%;
-}
-.footer-overline {
-  color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px; /* 155.556% */
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  display: inline-block;
-}
-
-.footer-heading {
-  color: var(--Black, #1a1a1a);
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px; /* 126.667% */
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.footer-heading-sm {
-  color: #1a1a1a;
-  font-family: var(--font-antonio);
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.footer-text {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  margin-bottom: 24px;
-}
-
 .newsletter-form {
-  display: flex;
-  max-width: 480px;
+    flex-direction: column;
 }
-
-.newsletter-input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #d1d1d1;
-  padding: 10px 0;
-  font-family: var(--font-bai-jamjuree);
-  font-size: 14px;
-  color: #1a1a1a;
-  outline: none;
-  margin-right: 20px;
+/* -------------Footer CSS End ------------- */
 }
-
-.newsletter-input::placeholder {
-  color: #999;
-}
-
-.footer-social-box .social-icons {
-  display: flex;
-  gap: 4px;
-}
-
-.social-icon {
-  width: 36px;
-  height: 36px;
-  background-color: var(--Blue);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.border-left-light {
-  border-left: 2px solid #fff; /* White divider as seen in design */
-}
-
-.footer-logo {
-  max-width: 186px;
-  height: auto;
-  margin-bottom: 40px;
-}
-
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 30px;
-  max-width: 380px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-bai-jamjuree);
-  font-size: 14px;
-}
-
-.contact-label {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
-}
-
-.contact-phone {
-  color: var(--Blue, #3086b6);
-  text-align: right;
-
-  /* h5 */
-  font-family: "Bai Jamjuree";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px; /* 140% */
-}
-
-/* Middle & Bottom Sections */
-.footer-links-section {
-  padding: 60px 0 40px 0;
-}
-
-/* Custom 5 column grid for footer links */
-.custom-col-5 {
-  flex: 0 0 20%;
-  max-width: 20%;
-  padding: 0 15px;
-}
-
-.footer-col-title {
-  color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px; /* 125% */
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.footer-links-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links-list li {
-  margin-bottom: 16px;
-}
-
-.footer-links-list li a {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-
-.footer-bottom-section {
-  padding: 26px 0;
-  border-top: 1px solid #f7f6fa;
-}
-
-.copyright-text {
-  color: oklab(0% 0 0 / 0.6);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-
-.copyright-text a {
-  color: oklab(0% 0 0 / 0.6);
-  text-decoration: none;
-}
-
-/* Responsive adjustments for footer specifically */
-@media (max-width: 1200px) {
-  .custom-col-5 {
-    flex: 0 0 20%; /* Keep 5 col layout on large tablets if space permits */
-    max-width: 20%;
-  }
-}
-/* -----------------------------------Desktop Footer CSS End ---------------------------------- */
