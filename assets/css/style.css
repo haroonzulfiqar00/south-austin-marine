@@ -1211,7 +1211,7 @@ ul {
 .boat-details .price {
   color: #1a1a1a;
   font-family: var(--font-bai-jamjuree);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400; /* Regular weight */
   margin-bottom: 2px;
 }
@@ -1941,6 +1941,49 @@ margin-bottom: 40px;
 
 
 /* -----------------------------------Trade Page CSS End ---------------------------------- */
+
+/* -----------------------------------Stock Docks CSS Start ---------------------------------- */
+.stock-docks-section{
+    padding: 64px 0;
+}
+.stock-docks-section .container-desktop{
+  max-width: 1550px !important;
+}
+.stock-title{
+    color: var(--Black, #1A1A1A);
+    text-align: center;
+    font-family: Antonio;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+/* -----------------------------------Stock Docks CSS End ---------------------------------- */
+
+/* -----------------------------------Docks Gallery CSS Start ---------------------------------- */
+.docks-gallery-section {
+    padding: 0;
+}
+
+.docks-gallery-carousel .item {
+    padding-right: 4px;
+}
+
+.gallery-item {
+    height: 480px;
+    width: 100%;
+}
+
+.gallery-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -----------------------------------Docks Gallery CSS End ---------------------------------- */
+
 
 /* Responsive Styles */
 

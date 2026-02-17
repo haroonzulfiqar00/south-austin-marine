@@ -247,6 +247,31 @@ $(document).ready(function() {
         });
     }
 
+    // ===================================
+    // Docks Gallery Carousel
+    // ===================================
+    if ($('.docks-gallery-carousel').length) {
+        $('.docks-gallery-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 2.5
+                }
+            }
+        });
+    }
+
 
     // ===================================
     // Mobile Footer Accordion
