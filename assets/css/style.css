@@ -1756,234 +1756,299 @@ ul {
 }
 /* -----------------------------------Trade Page CSS Start ---------------------------------- */
 .seager-hero-section {
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .seager-hero-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--Black, #1A1A1A);
-    opacity: 0.4;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--Black, #1a1a1a);
+  opacity: 0.4;
+  z-index: 1;
 }
 
 .seager-hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .seager-hero-section .container-seager {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .seager-hero-title {
-    color: var(--White, #FFF);
-    text-align: center;
-    font-family: Antonio;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 88px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .trade-confidence-section {
-    background-color: var(--White);
-    padding: 64px 0;
+  background-color: var(--White);
+  padding: 64px 0;
 }
 
 .trade-section-title {
-    color: var(--Black, #1A1A1A);
-    text-align: center;
-    font-family: Antonio;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .trade-content-text {
-    color: var(--Black, #1A1A1A);
-    text-align: center;
-    font-family: var(--font-bai-jamjuree);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    max-width: 900px;
-    margin: 0 auto 40px auto;
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: var(--font-bai-jamjuree);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
 }
 
 .trade-process-section {
-    background-color: var(--White);
-    padding: 80px 0;
+  background-color: var(--White);
+  padding: 80px 0;
 }
 
 .process-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .process-icon {
-    width: 50px;
-    height: 50px;
-    flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
 }
-.trade-process-title{
-color: var(--Black, #1A1A1A);
-text-align: center;
-font-family: Antonio;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 38px;
-text-transform: uppercase;
-margin-bottom: 40px;
+.trade-process-title {
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 .process-content h3 {
-    color: var(--Black, #1A1A1A);
-    font-family: var(--font-bai-jamjuree);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-    margin-bottom: 15px;
+  color: var(--Black, #1a1a1a);
+  font-family: var(--font-bai-jamjuree);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 15px;
 }
 
 .process-content p {
-    color: var(--Black, #1A1A1A);
-    font-family: var(--font-bai-jamjuree);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    max-width: 350px;
+  color: var(--Black, #1a1a1a);
+  font-family: var(--font-bai-jamjuree);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 350px;
 }
 
 /* Trade Form Section */
 .seager-form-section {
-    background-color: var(--White);
-    padding: 64px 0;
-    border-top: 1px solid var(--D9, #D9D9D9);
+  background-color: var(--White);
+  padding: 64px 0;
+  border-top: 1px solid var(--D9, #d9d9d9);
 }
-.seager-form-section .form-group label{
+.seager-form-section .form-group label {
   display: none;
 }
 
 .seager-form-title {
-    color: var(--Black, #1A1A1A);
-    text-align: center;
-    font-family: Antonio;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .seager-form {
-    max-width: 480px;
-    margin: 0 auto;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .seager-form input,
 .seager-form textarea {
-    width: 100%;
-    padding: 12px 24px;
-    min-height: 48px;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    border: 1px solid var(--D9, #D9D9D9);
-    background: var(--White, #FFF);
-    font-family: var(--font-bai-jamjuree);
-    font-size: 16px;
-    color: rgb(26, 26, 26);
+  width: 100%;
+  padding: 12px 24px;
+  min-height: 48px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--D9, #d9d9d9);
+  background: var(--White, #fff);
+  font-family: var(--font-bai-jamjuree);
+  font-size: 16px;
+  color: rgb(26, 26, 26);
 }
 
 .seager-form input::placeholder,
 .seager-form textarea::placeholder {
-    color: rgba(26, 26, 26, 0.6);
-    opacity: 1;
+  color: rgba(26, 26, 26, 0.6);
+  opacity: 1;
 }
 
 .seager-form textarea {
-    resize: vertical;
-    min-height: 100px;
+  resize: vertical;
+  min-height: 100px;
 }
 
 .seager-form input:focus,
 .seager-form textarea:focus {
-    outline: none;
-    border-color:none;
-    box-shadow: none;
+  outline: none;
+  border-color: none;
+  box-shadow: none;
 }
-
 
 /* -----------------------------------Trade Page CSS End ---------------------------------- */
 
 /* -----------------------------------Stock Docks CSS Start ---------------------------------- */
-.stock-docks-section{
-    padding: 64px 0;
+.stock-docks-section {
+  padding: 64px 0;
 }
-.stock-docks-section .container-desktop{
+.stock-docks-section .container-desktop {
   max-width: 1550px !important;
 }
-.stock-title{
-    color: var(--Black, #1A1A1A);
-    text-align: center;
-    font-family: Antonio;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+.stock-title {
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 /* -----------------------------------Stock Docks CSS End ---------------------------------- */
 
 /* -----------------------------------Docks Gallery CSS Start ---------------------------------- */
 .docks-gallery-section {
-    padding: 0;
+  padding: 0;
 }
 
 .docks-gallery-carousel .item {
-    padding-right: 4px;
+  padding-right: 4px;
 }
 
 .gallery-item {
-    height: 480px;
-    width: 100%;
+  height: 480px;
+  width: 100%;
 }
 
 .gallery-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* -----------------------------------Docks Gallery CSS End ---------------------------------- */
 
+/* -----------------------------------Warranty Page CSS Start ---------------------------------- */
+.warranty-faqs-section .trade-section-title {
+  padding-bottom: 64px;
+  margin: 0;
+}
+.warranty-faq-item {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.warranty-faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.faq-q-label {
+  color: var(--Blue, #3086b6);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.faq-question-text {
+  color: var(--Black, #1a1a1a);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.faq-answer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.faq-a-label {
+  color: var(--Blue, #3086b6);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.faq-answer-text {
+  color: var(--Black, #1a1a1a);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* -----------------------------------Warranty Page CSS End ---------------------------------- */
 
 /* Responsive Styles */
 
@@ -2254,7 +2319,7 @@ margin-bottom: 40px;
   /* -------------Quick Links Section CSS Start ------------- */
   .quick-links-section {
     padding: 40px 0;
-}
+  }
   .quick-links-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -2266,8 +2331,8 @@ margin-bottom: 40px;
     font-size: 20px;
   }
   /* -------------Quick Links Section CSS End ------------- */
-  
-/* -------------Trade Page CSS Start ------------- */
+
+  /* -------------Trade Page CSS Start ------------- */
   .seager-hero-title {
     font-size: 56px;
     line-height: 64px;
@@ -2283,11 +2348,10 @@ margin-bottom: 40px;
   .trade-confidence-section {
     padding: 50px 0;
   }
-    .process-content p {
+  .process-content p {
     max-width: 100%;
-}
+  }
   /* -------------Trade Page CSS End ------------- */
-
 
   /* Stack columns vertically */
   .footer-links-section .row {
@@ -2336,24 +2400,23 @@ margin-bottom: 40px;
     display: none;
     padding-bottom: 20px;
   }
-.footer-connect-box {
+  .footer-connect-box {
     padding: 30px;
     text-align: center;
-}
-.footer-social-box {
+  }
+  .footer-social-box {
     padding: 30px;
     text-align: center;
-}
-.footer-social-box .social-icons {
+  }
+  .footer-social-box .social-icons {
     justify-content: center;
-}
-.copyright-text {
+  }
+  .copyright-text {
     text-align: center;
-}
-.footer-contact-box {
+  }
+  .footer-contact-box {
     padding: 30px;
-}
-  
+  }
 }
 
 @media (max-width: 576px) {
@@ -2559,19 +2622,18 @@ margin-bottom: 40px;
     line-height: 38px;
   }
   .trade-confidence-section {
-     padding: 40px 0;
+    padding: 40px 0;
   }
   /* -------------Trade Page CSS End ------------- */
-
 }
 
 @media (max-width: 450px) {
   /* -------------Footer CSS Start ------------- */
   .contact-item {
     flex-direction: column;
-}
-.newsletter-form {
+  }
+  .newsletter-form {
     flex-direction: column;
-}
-/* -------------Footer CSS End ------------- */
+  }
+  /* -------------Footer CSS End ------------- */
 }
