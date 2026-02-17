@@ -2224,12 +2224,49 @@ ul {
   color: var(--Red, #d50100);
   text-decoration: none;
 }
-.trade-content-text a{
+.trade-content-text a {
   text-decoration: underline;
   color: var(--Black, #1a1a1a);
 }
 .service-sub-section .brand-logos-grid img {
-    width: 160px;
+  width: 160px;
+}
+.slip-rental-section .slip-rental-title {
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.slip-rental-section .service-link-card .card-overlay {
+  background: unset;
+}
+
+.slip-rental-section .card-content {
+  padding: 16px 80px;
+}
+.slip-rental-section .card-content h4 {
+  color: var(--Black, #1a1a1a);
+
+  font-family: "Bai Jamjuree";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+.slip-rental-section .card-content p {
+  color: var(--Black, #1a1a1a);
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @media (max-width: 1400px) {

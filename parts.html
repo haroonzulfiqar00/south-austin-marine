@@ -111,11 +111,17 @@
                             <div class="field-error" id="error_boat_details"></div> <!-- Error container -->
                         </div>
                         
-                        <!-- Additional Comments -->
+                        <!-- Part Number(s) -->
                         <div class="form-group">
-                            <label id="commentsLabel" for="comments">Additional Comments</label>
-                            <textarea name="comments" class="form-control" placeholder="Additional Comments" aria-labelledby="commentsLabel"  id="comments"></textarea>
-                            <div class="field-error" id="error_comments"></div> <!-- Error container -->
+                            <label id="part_numberLabel" for="part_number">Part Number(s)*</label>
+                            <input name="part_number" type="text" class="form-control require_check" placeholder="Part Number(s)" aria-labelledby="part_numberLabel"  id="part_number">
+                            <div class="field-error" id="error_part_number"></div> <!-- Error container -->
+                        </div>
+                        <!-- Parts Description -->
+                        <div class="form-group">
+                            <label id="parts_descriptionLabel" for="parts_description">Parts Description</label>
+                            <input name="parts_description" type="text" class="form-control require_check" placeholder="Parts Description" aria-labelledby="parts_descriptionLabel"  id="parts_description">
+                            <div class="field-error" id="error_parts_description"></div> <!-- Error container -->
                         </div>
                         
                         <!-- Submit Button -->
