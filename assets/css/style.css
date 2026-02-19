@@ -149,7 +149,7 @@ a:hover {
 
 p {
   margin-bottom: 0;
-  font-family: "Antonio", sans-serif;
+  font-family: var(--font-bai-jamjuree);
   font-weight: 400;
 }
 
@@ -983,7 +983,6 @@ ul {
   line-height: 88px;
   text-transform: uppercase;
   margin-bottom: 40px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* -----------------------------------Rental Section CSS Start ---------------------------------- */
@@ -2625,6 +2624,55 @@ padding: 2px 0;
     position: relative;
     z-index: 9;
 }
+/* ---------private -charter ---------- */
+.common-hero-sec2 .prihero-content {
+    max-width: 630px;
+}
+.common-hero-sec2 .hero-title{
+color: var(--Black, #1A1A1A);
+font-family: Antonio;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: 88px;
+text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+.common-hero-sec2 .hero-text{
+  margin-bottom: 40px;
+}
+
+.private-charter-policy{
+  background: var(--Lightest-Gray, #F7F6FA);
+  padding: 40px 0;
+}
+.private-charter-policy .process-content p {
+    max-width: 400px;
+}
+
+.rental-frame{
+  padding: 80px 0;
+}
+.rentals-frame-area{
+  border-radius: 24px;
+border: 4px dashed var(--D9, #D9D9D9);
+background: var(--Lightest-Gray, #F7F6FA);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 1080px;
+}
+.rentals-frame-area h3{
+color: hsla(0, 0%, 10%, 0.1);
+font-family: Antonio;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: 88px; /* 110% */
+text-transform: uppercase;
+}
+
 @media (max-width: 1400px) {
   .mega-menu-brands-grid {
     grid-template-columns: repeat(3, 1fr);
