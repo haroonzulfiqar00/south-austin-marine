@@ -2553,7 +2553,78 @@ background: var(--Lightest-Gray, #F7F6FA);
   line-height: 24px; 
   margin-bottom: 40px;
 }
+/* ---------------CONTACT US PAGE ---------------------- */
+.contactus-cards .feature-card {
+    margin-bottom: 24px;
+}
+.contactus-cards .feature-card .feature-img {
+    margin-bottom: 0px;
+}
+.contactus-cards .feature-card .feature-title {
+  color: var(--Black, #1A1A1A);
 
+
+font-family: "Bai Jamjuree";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; 
+text-transform: capitalize;
+    margin: 16px 0;
+}
+.contactus-cards .feature-card p {
+color: var(--Black, #1A1A1A);
+
+
+font-family: "Bai Jamjuree";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+    margin-bottom: 16px;
+}
+.contactus-cards .feature-card .feature-call {
+color: var(--Blue, #3086B6);
+
+
+font-family: "Bai Jamjuree";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.contactus-cards .feature-card ul li {
+  color: var(--Black, #1A1A1A);
+
+
+font-family: "Bai Jamjuree";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+list-style: none;
+padding: 2px 0;
+}
+#contact_page_form {
+    border-top:none;
+    margin-top: -170px;
+    padding: 0;
+}
+.cntctpgeform {
+    border-radius: 24px;
+    background: var(--Lightest-Gray, #F7F6FA);
+    padding: 40px 120px;
+    position: relative;
+    z-index: 9;
+}
 @media (max-width: 1400px) {
   .mega-menu-brands-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -2884,6 +2955,16 @@ background: var(--Lightest-Gray, #F7F6FA);
     font-size: 30px;
     line-height: 28px;
     margin-bottom: 20px;
+}
+
+/* -------contact us page -------- */
+#contact_page_form {
+    margin-top: 0;
+}
+.cntctpgeform {
+    border-radius: 24px;
+    padding: 30px 15px;
+        margin-top: 15px;
 }
 
   /* Stack columns vertically */
