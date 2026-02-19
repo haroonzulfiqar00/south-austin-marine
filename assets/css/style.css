@@ -1123,7 +1123,6 @@ ul {
   margin: 0;
 }
 
-
 /* -----------------------------------Services Links Section CSS End ---------------------------------- */
 
 /* -----------------------------------Brand Logos Section CSS Start ---------------------------------- */
@@ -1891,7 +1890,7 @@ ul {
   display: none;
 }
 .seager-form-section .seager-form-text {
-  color: var(--Red, #D50100);
+  color: var(--Red, #d50100);
   text-align: center;
   font-family: "Bai Jamjuree";
   font-size: 16px;
@@ -1901,11 +1900,11 @@ ul {
   padding-top: 16px;
   padding-bottom: 40px;
 }
-.location-select{
+.location-select {
   height: 48px;
   border: 1px solid #000;
 }
-.location-select:focus{
+.location-select:focus {
   outline: none;
   border-color: none;
   box-shadow: none;
@@ -2289,218 +2288,217 @@ ul {
   line-height: 24px;
 }
 
-
 /* -----------------------------------Storage Rates Section CSS Start ---------------------------------- */
 .storage-rates-section {
-    padding-bottom: 60px;
-    background-color: var(--White);
+  padding-bottom: 60px;
+  background-color: var(--White);
 }
 .storage-rates-section .section-title-large {
-color: var(--Black, #1A1A1A);
-text-align: center;
-font-family: Antonio;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 38px; /* 126.667% */
-text-transform: uppercase;
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 126.667% */
+  text-transform: uppercase;
 }
 .rate-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    font-family: var(--font-bai-jamjuree);
-    color: var(--Black);
-    font-size: 16px;
-    border-bottom: 1px solid #F7F6FA;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-family: var(--font-bai-jamjuree);
+  color: var(--Black);
+  font-size: 16px;
+  border-bottom: 1px solid #f7f6fa;
 }
 
 .rate-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .rate-item span:first-child {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .rate-item .price {
-    font-weight: 700;
-    text-align: right;
+  font-weight: 700;
+  text-align: right;
 }
 
 .rates-table-container {
-    width: 100%;
+  width: 100%;
 }
 
 .rates-header {
-    background-color: var(--Blue);
-    padding: 12px;
-    text-align: center;
+  background-color: var(--Blue);
+  padding: 12px;
+  text-align: center;
 }
 
 .rates-header h3 {
-    margin: 0;
-    color: #fff;
-    font-size: 16px;
-    font-family: var(--font-bai-jamjuree);
-    font-weight: 700;
-    text-transform: none; /* Keep generic casing unless specified */
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--font-bai-jamjuree);
+  font-weight: 700;
+  text-transform: none; /* Keep generic casing unless specified */
 }
 
 .rates-subheader {
-    background-color: var(--Black);
-    padding: 10px 20px;
-    padding-right: 15%;
-    color: #fff;
-    font-family: var(--font-bai-jamjuree);
-    font-weight: 700;
-    font-size: 14px;
+  background-color: var(--Black);
+  padding: 10px 20px;
+  padding-right: 15%;
+  color: #fff;
+  font-family: var(--font-bai-jamjuree);
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .rates-body .rate-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 6px;
-    padding-right: 15%;
-    font-family: var(--font-bai-jamjuree);
-    color: var(--Black);
-    font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  padding-right: 15%;
+  font-family: var(--font-bai-jamjuree);
+  color: var(--Black);
+  font-size: 15px;
 }
 
 .rates-body .rate-row:nth-child(even) {
-    background-color: #F7F6FA;
+  background-color: #f7f6fa;
 }
 .rates-body .rate-row span:last-child {
-    font-weight: 600;
-    text-align: right;
+  font-weight: 600;
+  text-align: right;
 }
 /* -----------------------------------Storage Rates Section CSS End ---------------------------------- */
 
 /* -----------------------------------Contract Terms Section CSS Start ---------------------------------- */
 .contract-terms-section {
-    padding: 64px 0;
-    background-color: var(--White);
-    border-top: 1px solid #D9D9D9;
+  padding: 64px 0;
+  background-color: var(--White);
+  border-top: 1px solid #d9d9d9;
 }
 
 .contract-header {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .contract-title {
-color: var(--Black, #1A1A1A);
-text-align: center;
+  color: var(--Black, #1a1a1a);
+  text-align: center;
 
-/* h3 */
-font-family: Antonio;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 38px; /* 126.667% */
-text-transform: uppercase;
-    margin-bottom: 24px;
+  /* h3 */
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 126.667% */
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .contract-address {
-color: var(--Black, #1A1A1A);
-text-align: center;
+  color: var(--Black, #1a1a1a);
+  text-align: center;
 
-/* p */
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 150% */
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
 }
-.contract-cntact{
-  color: var(--Blue, #3086B6);
+.contract-cntact {
+  color: var(--Blue, #3086b6);
 
-/* p */
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
-margin-bottom: 40px;
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 40px;
 }
-.body-para{
-color: var(--Black, #1A1A1A);
+.body-para {
+  color: var(--Black, #1a1a1a);
 
-/* p */
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 .contract-terms-section .container-seager-md {
-    max-width: 960px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 960px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contract-intro {
-color: var(--Black, #1A1A1A);
+  color: var(--Black, #1a1a1a);
 
-/* p */
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-    margin-bottom: 24px;
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 24px;
 }
 
 .contract-list {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .contract-list li {
-    color: var(--Black , #1A1A1A);
+  color: var(--Black, #1a1a1a);
 
-/* p */
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-    margin-bottom: 16px;
+  /* p */
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin-bottom: 16px;
 }
 
 .proshop-brands-sec .brand-logos-grid img {
-    width: 160px;
-    margin-bottom: 40px;
+  width: 160px;
+  margin-bottom: 40px;
 }
 .proshop-brands-sec .brand-logos-grid {
-    justify-content: space-between;
-    column-gap: 70px;
-    row-gap: 24px;
+  justify-content: space-between;
+  column-gap: 70px;
+  row-gap: 24px;
 }
-.proshop-srvce-sec .sec-title{
-color: var(--Black, #1A1A1A);
-text-align: center;
+.proshop-srvce-sec .sec-title {
+  color: var(--Black, #1a1a1a);
+  text-align: center;
 
-/* h3 */
-font-family: Antonio;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: 38px; /* 126.667% */
-text-transform: uppercase;
-margin-bottom: 40px;
+  /* h3 */
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 126.667% */
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
-.proshop-srvce-sec .service-link-card p{
-  color: var(--White, #FFF);
-font-family: "Bai Jamjuree";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 133.333% */
-text-transform: capitalize;
-margin-top: 40px;
+.proshop-srvce-sec .service-link-card p {
+  color: var(--White, #fff);
+  font-family: "Bai Jamjuree";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  text-transform: capitalize;
+  margin-top: 40px;
 }
 
 .proshop-srvce-sec .service-link-card::before {
@@ -2512,7 +2510,48 @@ margin-top: 40px;
   pointer-events: none;
 }
 .proshop-srvce-sec .card-overlay {
-    background: none;
+  background: none;
+}
+.about-seager-section .trade-section-title {
+  color: var(--Black, #1a1a1a);
+  font-family: "Bai Jamjuree";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+.about-seager-section .trade-section-title span {
+  font-weight: 700;
+}
+.set-apart-content {
+  padding: 45px;
+  border-radius: 24px;
+background: var(--Lightest-Gray, #F7F6FA);
+}
+.set-apart-content img {
+  margin-bottom: 24px;
+}
+.set-apart-content .section-title {
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: Antonio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; 
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.set-apart-content p {
+  color: var(--Black, #1a1a1a);
+  text-align: center;
+  font-family: "Bai Jamjuree";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1400px) {
@@ -2899,7 +2938,6 @@ margin-top: 40px;
 }
 
 @media (max-width: 576px) {
-
   .navbar-logo img {
     height: 40px;
   }
@@ -3107,7 +3145,7 @@ margin-top: 40px;
   /* -------------Trade Page CSS End ------------- */
 
   /* ------Contract Terms Section CSS Start ------ */
-  
+
   .contract-title {
     font-size: 24px;
   }
@@ -3124,4 +3162,3 @@ margin-top: 40px;
   }
   /* -------------Footer CSS End ------------- */
 }
-
