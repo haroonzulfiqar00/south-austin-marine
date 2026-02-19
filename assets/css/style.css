@@ -1241,7 +1241,7 @@ ul {
 .split-feature-section-wrapper {
   width: 100%;
   background-color: #fff;
-  padding: 60px 0;
+  padding: 64px 0;
   position: relative;
   z-index: 2; /* Scroll over sticky elements */
 }
@@ -2871,6 +2871,21 @@ background: var(--Lightest-Gray, #F7F6FA);
     width: 100%;
   }
 
+  /* ------about -------  */
+.about-seager-section .trade-section-title {
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.set-apart-content {
+    padding: 20px;
+}
+.set-apart-content .section-title {
+    font-size: 30px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
   /* Stack columns vertically */
   .footer-links-section .row {
     flex-direction: column;
@@ -3140,7 +3155,7 @@ background: var(--Lightest-Gray, #F7F6FA);
     line-height: 38px;
   }
   .trade-confidence-section {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   /* -------------Trade Page CSS End ------------- */
 
