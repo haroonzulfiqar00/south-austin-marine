@@ -2838,6 +2838,7 @@ text-transform: uppercase;
     padding: 16px 24px 16px 40px;
 }
 
+
 @media (max-width: 1400px) {
   .mega-menu-brands-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -2892,7 +2893,14 @@ text-transform: uppercase;
     line-height: 68px;
   }
   /* -------Services Links Section CSS End --------- */
-
+.loc-keuka-rentals .services-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.loc-keuka-rentals .service-link-card {
+    height: 400px;
+}
   .brand-logos-grid {
     column-gap: 60px;
   }
@@ -3194,7 +3202,13 @@ line-height: 38px;
 .loc-keuka-rentals{
   padding-top: 40px;
 }
-
+.loc-keuka-rentals .services-links-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+.local-showroom-brands {
+    padding: 10px 0;
+}
   /* Stack columns vertically */
   .footer-links-section .row {
     flex-direction: column;
