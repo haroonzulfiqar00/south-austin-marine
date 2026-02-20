@@ -2800,6 +2800,44 @@ line-height: 28px;
   display: flex;
 }
 
+.loc-can-east-service .feature-title {
+  color: var(--Black, #1A1A1A);
+  font-family: Antonio;
+  font-size: 30px;
+  font-style: normal; 
+  font-weight: 700;
+  line-height: 38px; 
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.loc-keuka-rentals{
+  padding-top: 80px;
+}
+.loc-keuka-rentals .services-links-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.loc-keuka-rentals .service-link-card {
+    height: 620px;
+}
+.loc-keuka-rentals .card-overlay h3{
+color: var(--White, #FFF);
+font-family: Antonio;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+text-transform: uppercase;
+}
+.loc-keuka-rentals .card-overlay {
+    padding: 0 24px 40px 40px;
+    background: none;
+}
+.loc-keuka-rentals .card-content {
+    padding: 16px 24px 16px 40px;
+}
+
 @media (max-width: 1400px) {
   .mega-menu-brands-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -3152,6 +3190,9 @@ line-height: 28px;
 font-size: 30px;
 line-height: 38px; 
     margin-bottom: 30px;
+}
+.loc-keuka-rentals{
+  padding-top: 40px;
 }
 
   /* Stack columns vertically */
