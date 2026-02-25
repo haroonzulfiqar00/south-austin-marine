@@ -1,48 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
-@font-face {
-  font-family: "Bai Jamjuree";
-  src: url("../fonts/bai-jamjuree/BaiJamjuree-ExtraLight.ttf")
-    format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bai Jamjuree";
-  src: url("../fonts/bai-jamjuree/BaiJamjuree-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bai Jamjuree";
-  src: url("../fonts/bai-jamjuree/BaiJamjuree-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bai Jamjuree";
-  src: url("../fonts/bai-jamjuree/BaiJamjuree-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bai Jamjuree";
-  src: url("../fonts/bai-jamjuree/BaiJamjuree-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bai Jamjuree";
-  src: url("../fonts/bai-jamjuree/BaiJamjuree-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Michroma&display=swap');
 
 * {
   margin: 0;
@@ -53,10 +9,8 @@
 :root {
   /* Colors */
   --Soft-black: #111;
-  --black: #000;
-  --Black: #000;
-  --white-color: #fff;
-  --White: #fff;
+  --Blk: #000;
+  --Wt: #fff;
   --gray-color: #d9d9d9;
   --lightest-gray-color: #fafafa;
   --Blue-bright: #2464db;
@@ -64,8 +18,8 @@
   --Red: #d50100;
 
   /* Fonts */
-  --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
-  --font-antonio: "Antonio", sans-serif;
+  --font-Manrope: "Manrope", sans-serif;
+  --font-Michroma: "Michroma", sans-serif;
 }
 
 /* Common css start here  */
@@ -74,7 +28,7 @@
   padding: 18px 24px;
   color: var(--White, #fff);
   text-align: center;
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -149,7 +103,7 @@ a:hover {
 
 p {
   margin-bottom: 0;
-  font-family: var(--font-bai-jamjuree);
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
 }
 
@@ -157,7 +111,7 @@ ul {
   margin-bottom: 0;
 }
 
-.container-seager-fluid {
+.container-austin-fluid {
   max-width: 1680px;
   width: 100%;
   padding-right: 15px;
@@ -166,7 +120,7 @@ ul {
   margin-left: auto;
 }
 
-.container-seager-md {
+.container-austin-md {
   max-width: 1360px;
   width: 100%;
   padding-right: 15px;
@@ -174,7 +128,7 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
-.container-seager {
+.container-austin {
   max-width: 1248px;
   width: 100%;
   padding-right: 15px;
@@ -194,20 +148,20 @@ ul {
 /* Common css end here  */
 
 /* Navigation Bar Styles */
-.navbar-seager {
-  background-color: var(--White);
+.navbar-austin {
+  background: var(--Wt, #FFF);
   padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.navbar-seager .container-seager-fluid {
+.navbar-austin .container-austin-fluid {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  padding: 15px;
+  height: 100px;
+  padding: 15px 0;
 }
 
 .navbar-logo {
@@ -216,7 +170,7 @@ ul {
 }
 
 .navbar-logo img {
-  width: 300px;
+  width: 188px;
 }
 
 .navbar-menu {
@@ -226,7 +180,6 @@ ul {
   gap: 40px;
   margin: 0;
   padding: 0;
-  margin-right: 198px;
 }
 
 .navbar-menu li {
@@ -234,14 +187,13 @@ ul {
 }
 
 .navbar-menu li a {
-  color: var(--Blue);
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
+color: #000;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
   transition: all 0.3s ease;
   padding: 8px 0;
   display: inline-block;
@@ -251,6 +203,7 @@ ul {
 .navbar-right {
   display: flex;
   align-items: center;
+  gap: 80px;
 }
 
 .navbar-location {
@@ -258,24 +211,26 @@ ul {
   align-items: baseline;
   gap: 8px;
   color: var(--Red);
-  font-family: var(--font-bai-jamjuree);
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  position: absolute;
   cursor: pointer;
-  right: 15%;
+  /* position: absolute;
+  right: 15%; */
 }
 
 .location-dropdown {
   position: absolute;
   top: 100%;
-  right: -120px;
+  right: 180px;
   width: 420px;
-  background: var(--White);
+  background: #FFF;
+box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 30px;
   z-index: 1001;
   display: none;
+
 }
 
 .location-dropdown.active {
@@ -315,46 +270,59 @@ ul {
 .loc-header p span {
   color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .location-item.selected .loc-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: "Bai Jamjuree";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+color: var(--Blk, #000);
+text-align: center;
+
+/* h3 */
+font-family: Manrope;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
 }
 
 .location-item.selected .loc-details {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-decoration-line: underline;
+color: var(--Blk, #000);
+text-align: center;
+
+/* p */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
   padding: 16px 0;
 }
 
 .location-item.selected .loc-phone {
-  color: var(--Red, #d50100);
-  text-align: center;
-  font-family: "Bai Jamjuree";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  text-decoration: none;
+color: var(--Reddish, #C74D41);
+text-align: center;
+
+/* h5 */
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 24px; /* 133.333% */
 }
 
 .location-separator {
@@ -378,63 +346,76 @@ ul {
 }
 
 .location-item .loc-title {
-  color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
+color: var(--Black, #1A1A1A);
 
+/* h5 */
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 24px; /* 133.333% */
+}
+.loc-phone-title{
+  color: var(--Black, #1A1A1A);
+
+/* p */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
 .location-item .select-btn {
-  color: var(--Blue, #3086b6);
-  text-align: right;
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
+color: var(--Reddish, #C74D41);
+text-align: right;
+
+/* button */
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 0.8px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+text-transform: uppercase;
 }
 
 .navbar-location i {
-  color: var(--Red);
-  font-size: 15px;
-  margin-right: 4px;
+  color: var(--Blk);
+    font-size: 20px;
+    margin-right: 54px;
 }
 
 .navbar-location-text {
   display: flex;
   flex-direction: column;
+  align-items: end;
 }
 
 .navbar-location-label {
-  color: var(--Blue, #3086b6);
-  font-family: "Bai Jamjuree";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
+color: var(--Blk, #000);
+text-align: right;
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
 }
 
 .navbar-location-name {
-  color: var(--Black, #1a1a1a);
-  text-align: right;
-  font-family: Rubik;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
+color: var(--Blk, #000);
+text-align: right;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
 }
 
 .navbar-more-btn {
@@ -445,11 +426,14 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
-  color: var(--Blue);
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+color: #000;
+text-align: right;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
@@ -458,16 +442,18 @@ ul {
   flex-direction: column;
   gap: 6px;
 }
-
+.navbar-more-btn .hamburger span:nth-child(2) {
+    width: 22px;
+}
 .navbar-more-btn .hamburger span {
-  width: 24px;
+  width: 30px;
   height: 2px;
-  background-color: var(--Blue);
+  background-color: var(--Blk);
   transition: all 0.3s ease;
 }
 
 .navbar-more-btn:hover .hamburger span {
-  background-color: var(--Blue);
+  background-color: var(--Blk);
 }
 
 /* Mobile Menu Toggle */
@@ -498,7 +484,7 @@ ul {
 
 .inventory-mega-menu {
   position: fixed;
-  top: 100px;
+  top: 120px;
   left: 0;
   width: 100%;
   background: var(--White);
@@ -508,7 +494,7 @@ ul {
   transform: translateY(-20px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
-  max-height: calc(100vh - 80px);
+  max-height: calc(100vh - 120px);
   overflow-y: auto;
 }
 
@@ -520,7 +506,7 @@ ul {
 .mega-menu-content {
   display: flex;
   gap: 40px;
-  padding: 20px 0px 80px 0;
+  padding: 40px 20px 80px 30px;
 }
 
 /* Left Sidebar */
@@ -531,7 +517,7 @@ ul {
 
 .mega-menu-title {
   color: var(--Blue);
-  font-family: var(--font-bai-jamjuree);
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: normal;
@@ -553,17 +539,55 @@ ul {
 .mega-menu-links li {
   margin-bottom: 22px;
 }
-.mega-menu-links li:nth-child(-n + 4) a {
-  font-size: 24px;
+.top-items {
+  margin-bottom: 64px;
 }
-.mega-menu-links li a {
+.top-items li a {
   color: #000;
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.bottom-items {
+  margin-top: 64px;
+}
+.bottom-items li a {
+  color: #000;
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   text-transform: capitalize;
+}
+.srchby-size h3{
+  color: #00000099;
+
+/* h5 */
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 24px; 
+margin-bottom: 24px;
+}
+.srchby-size .size-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px; /* space between items */
+}
+  
+
+.srchby-size p{
+color: var(--Blk, #000);
+font-family: Manrope;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 100% */
 }
 
 /* Right Content Area - Brands Grid */
@@ -582,7 +606,7 @@ ul {
   display: block;
   border-radius: 16px;
   overflow: hidden;
-  aspect-ratio: 4/3;
+  height: 140px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -593,18 +617,27 @@ ul {
   object-fit: cover;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.brand-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:rgba(0, 0, 0, 0.40);
+    z-index: 1;
+}
 .brand-card .brand-logo {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  max-width: 120px;
-  max-height: 50px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  z-index: 2;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-width: 120px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+
+    z-index: 2;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 
 /* ===================================
@@ -632,48 +665,41 @@ ul {
 
 /* Service Grid - 5 columns for service cards */
 .service-grid {
-  grid-template-columns: repeat(5, 1fr) !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px;
 }
 
 /* Service Card Styles */
 .service-card {
-  position: relative;
-  display: block;
-  border-radius: 16px;
-  overflow: hidden;
-  height: 400px;
-  width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 8px;
+border: 1px solid var(--D9, #D9D9D9);
+background: var(--Wt, #FFF);
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+padding: 50px 66px;
 }
 
-.service-card .service-bg {
+/* .service-card .service-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.service-card .service-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
-  z-index: 2;
-}
 
 .service-card .service-title {
-  color: var(--White, #fff);
-  font-family: Antonio;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px; /* 120% */
-  text-transform: uppercase;
+color: var(--Blk, #000);
+
+/* h3 */
+font-family: Manrope;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
 }
 
 /* ===================================
@@ -743,7 +769,7 @@ ul {
 
 .overlay h3 {
   color: var(--White, #fff);
-  font-family: Antonio;
+   font-family: "Michroma", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -770,7 +796,7 @@ ul {
 .rental-rules-link a {
   color: var(--Blue, #3086b6);
   text-align: center;
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -794,12 +820,14 @@ ul {
 
 .side-mega-menu {
   position: fixed;
-  top: 80px;
+  top: 100px;
   right: -440px;
   width: 440px;
   max-width: 100%;
-  height: calc(100vh - 80px);
-  background: var(--White);
+  height: calc(100vh - 100px);
+  border-left: 1px solid var(--D9, #D9D9D9);
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
   z-index: 1002;
   transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
@@ -826,20 +854,20 @@ ul {
 }
 
 .side-menu-links.primary {
-  gap: 20px;
+  gap: 16px;
 }
 
 .side-menu-links.primary li a {
-  color: #000;
-  text-align: right;
+color: var(--Blk, #000);
+text-align: right;
 
-  /* h4 */
-  font-family: "Bai Jamjuree";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  text-transform: capitalize;
+/* h3 */
+font-family: Manrope;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
 }
 
 /* Divider */
@@ -860,7 +888,7 @@ ul {
 .side-menu-title {
   color: rgba(0, 0, 0, 0.4);
   text-align: right;
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -877,7 +905,7 @@ ul {
   text-align: right;
 
   /* p */
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -928,594 +956,7 @@ ul {
   width: 100%;
 }
 
-/* ===================================
-   Hero Section Styles
-   =================================== */
-.hero-section {
-  position: relative;
-  height: 880px;
-  width: 100%;
-  overflow: hidden;
-}
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 2;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-content h1 {
-  color: var(--White, #fff);
-  text-align: center;
-  font-family: var(--font-antonio);
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 88px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-/* -----------------------------------Rental Section CSS Start ---------------------------------- */
-.sec-space {
-  height: 100vh;
-  width: 100%;
-}
-.rental-section {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f7f6fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-  position: -webkit-sticky;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-.rental-card {
-  position: relative;
-  width: 100%;
-  min-height: 600px;
-  border-radius: 24px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 60px 80px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  background: transparent; /* Remove fixed bg props */
-}
-
-.rental-bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.rental-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  z-index: 1;
-}
-
-.rental-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  text-align: left;
-}
-
-.rental-content h2 {
-  color: var(--White, #fff);
-  font-family: var(--font-antonio);
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 88px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.rental-content .btn-global {
-  background-color: var(--Blue);
-  border: none;
-}
-
-.rental-content .btn-global:hover {
-  background-color: #1a4fa0;
-}
-
-/* -----------------------------------Rental Section CSS End ---------------------------------- */
-
-/* -----------------------------------Services Links Section CSS Start ---------------------------------- */
-.services-links-section {
-  position: relative;
-  z-index: 2; /* Ensure it scrolls OVER the sticky rental section (z-index 1) */
-  background-color: #fff;
-  padding-top: 25px;
-  padding-bottom: 40px;
-}
-
-.services-links-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.service-link-card {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 840px;
-  overflow: hidden;
-  border-radius: 0; /* Design didn't specify, keeping sharp or default */
-}
-
-.service-link-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-overlay {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  padding: 0 65px 80px 80px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.6) 100%
-  );
-  pointer-events: none;
-}
-
-.card-overlay h3 {
-  color: var(--White, #fff);
-  font-family: var(--font-antonio); /* Antonio */
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 88px; /* 110% */
-  text-transform: uppercase;
-  margin: 0;
-}
-
-/* -----------------------------------Services Links Section CSS End ---------------------------------- */
-
-/* -----------------------------------Brand Logos Section CSS Start ---------------------------------- */
-.brand-logos-section {
-  position: relative;
-  z-index: 2; /* Scroll over sticky elements */
-  background-color: #fff;
-  padding: 40px 0;
-}
-
-.brand-logos-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  column-gap: 120px;
-  row-gap: 24px;
-}
-
-.brand-logos-grid img {
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 24px;
-}
-/* -----------------------------------Brand Logos Section CSS End ---------------------------------- */
-
-/* -----------------------------------New Arrivals Section CSS Start ---------------------------------- */
-.new-arrivals-section {
-  padding: 40px 0;
-  width: 100%;
-  background-color: #fff;
-  position: relative;
-  z-index: 2;
-}
-
-.new-arrivals-info h2 {
-  color: var(--Black, #1a1a1a);
-  font-family: var(--font-antonio);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.new-arrivals-info p {
-  color: #666;
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 30px;
-}
-
-.boat-card {
-  background: #fff;
-  transition: all 0.3s ease;
-}
-
-.boat-img {
-  width: 100%;
-  height: 300px;
-  background-color: #f0f0f0; /* Fallback */
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.boat-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.boat-details h3 {
-  color: var(--Black, #1a1a1a);
-  font-family: var(--font-bai-jamjuree); /* Bai Jamjuree */
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.boat-details .price {
-  color: #1a1a1a;
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-weight: 400; /* Regular weight */
-  margin-bottom: 2px;
-}
-
-.boat-details .specs {
-  color: #1a1a1a;
-  font-family: var(--font-bai-jamjuree);
-  font-size: 14px;
-  font-weight: 400;
-}
-/* -----------------------------------New Arrivals Section CSS End ---------------------------------- */
-
-.storage-seasonal-sec .service-link-card {
-  height: 720px;
-}
-.storage-seasonal-sec .services-links-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-.storage-seasonal-sec .card-overlay {
-  bottom: unset;
-  top: 0px;
-  padding: 120px 0px 0px 120px;
-  background: unset;
-}
-
-/* -----------------------------------Generic Split Feature Section CSS Start ---------------------------------- */
-.split-feature-section-wrapper {
-  width: 100%;
-  background-color: #fff;
-  padding: 64px 0;
-  position: relative;
-  z-index: 2; /* Scroll over sticky elements */
-}
-
-/* Generic Large Title Class */
-.section-title-large {
-  color: var(--Black, #1a1a1a);
-
-  /* h2 */
-  font-family: Antonio;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px; /* 120% */
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-.feature-content-box {
-  max-width: 600px;
-}
-/* Generic Text Class */
-.section-text-regular {
-  color: var(--Black, #1a1a1a);
-
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 40px;
-}
-
-.feature-image-box {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-/* -----------------------------------Generic Split Feature Section CSS End ---------------------------------- */
-
-.welcome-section {
-  position: relative;
-  height: 720px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.welcome-bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.welcome-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(22, 59, 87, 0.85); /* Dark blue overlay based on image */
-  z-index: 1;
-}
-
-.welcome-content {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-}
-
-.welcome-certification img {
-  height: 80px;
-  width: auto;
-}
-
-.welcome-content h2 {
-  font-family: var(--font-antonio);
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  color: #fff;
-}
-
-.welcome-content h3 {
-  font-family: var(--font-bai-jamjuree);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 24px;
-  color: #fff;
-}
-
-.welcome-content p {
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 40px;
-  color: #fff;
-}
-
-/* Specific button style for this section if needed, otherwise uses global */
-.welcome-content .btn-global {
-  background-color: #3b82b5;
-}
-.welcome-content .btn-global:hover {
-  background-color: #2a6a96;
-}
-
-.waterfront-solutions-sec {
-  position: sticky !important;
-}
-.waterfront-solutions-sec .rental-content h3 {
-  color: var(--White, #fff);
-  font-family: "Bai Jamjuree";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 8px;
-}
-.waterfront-solutions-sec .rental-content p {
-  color: var(--White, #fff);
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 40px;
-}
-
-/* -----------------------------------Welcome Section CSS Start ---------------------------------- */
-
-.welcome-section {
-  position: relative;
-  height: 720px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.welcome-bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.welcome-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 91, 129, 0.7);
-  z-index: 1;
-}
-
-.welcome-content {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-}
-
-.welcome-certification img {
-  height: 120px;
-  width: auto;
-  margin-bottom: 20px;
-}
-
-.welcome-content h2 {
-  font-family: var(--font-antonio);
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  color: #fff;
-}
-
-.welcome-content h3 {
-  font-family: var(--font-bai-jamjuree);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 24px;
-  color: #fff;
-}
-
-.welcome-content p {
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 40px;
-  color: #fff;
-  max-width: 78%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Button override for this section */
-.welcome-content .btn-global {
-  background-color: #3b82b5;
-  border: none;
-}
-.welcome-content .btn-global:hover {
-  background-color: #2a6a96;
-}
-
-/* -----------------------------------Welcome Section CSS End ---------------------------------- */
-
-/* -----------------------------------Quick Links Section CSS Start ---------------------------------- */
-
-.quick-links-section {
-  padding: 80px 0;
-  background-color: #fff;
-  position: relative;
-  z-index: 2;
-}
-
-.quick-links-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
-}
-
-.quick-link-card {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.quick-link-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.quick-card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0px 0 40px 40px;
-  pointer-events: none;
-}
-
-.quick-card-overlay h3 {
-  color: var(--White, #fff);
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-}
-
-/* -----------------------------------Quick Links Section CSS End ---------------------------------- */
 
 /* -----------------------------------Desktop Footer CSS Start ---------------------------------- */
 
@@ -1525,175 +966,11 @@ ul {
   z-index: 2;
   position: relative;
 }
-
-.footer-top-section {
-  border-top: 1px solid var(--Lightest-Gray, #f7f6fa);
-  background: var(--White, #fff);
-  padding: 60px 0;
-  width: 100%;
-}
-.footer-connect-box {
-  border-radius: 24px;
-  background: var(--Lightest-Gray, #f7f6fa);
-  padding: 50px 40px;
-}
-.footer-social-box {
-  border-radius: 24px;
-  background: var(--Lightest-Gray, #f7f6fa);
-  padding: 50px 60px;
-}
-
-.footer-contact-box {
-  border-radius: 24px;
-  background: var(--Lightest-Gray, #f7f6fa);
-  padding: 50px 60px;
-  height: 100%;
-}
-.footer-overline {
-  color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px; /* 155.556% */
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  display: inline-block;
-}
-
-.footer-heading {
-  color: var(--Black, #1a1a1a);
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px; /* 126.667% */
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.footer-heading-sm {
-  color: #1a1a1a;
-  font-family: var(--font-antonio);
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-
-.footer-text {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  margin-bottom: 24px;
-}
-
-.newsletter-form {
-  display: flex;
-  max-width: 480px;
-}
-
-.newsletter-input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #d1d1d1;
-  padding: 10px 0;
-  font-family: var(--font-bai-jamjuree);
-  font-size: 14px;
-  color: #1a1a1a;
-  outline: none;
-  margin-right: 20px;
-}
-
-.newsletter-input::placeholder {
-  color: #999;
-}
-
-.footer-social-box .social-icons {
-  display: flex;
-  gap: 4px;
-}
-
-.social-icon {
-  width: 36px;
-  height: 36px;
-  background-color: var(--Blue);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.border-left-light {
-  border-left: 2px solid #fff; /* White divider as seen in design */
-}
-
-.footer-logo {
-  max-width: 186px;
-  height: auto;
-  margin-bottom: 40px;
-}
-
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 30px;
-  max-width: 380px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact-label {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: auto;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
-}
-
-.contact-phone {
-  color: var(--Blue, #3086b6);
-  text-align: right;
-
-  /* h5 */
-  font-family: "Bai Jamjuree";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px; /* 140% */
-}
-
-/* Middle & Bottom Sections */
+ 
 .footer-links-section {
   padding: 40px 0 40px 0;
 }
-
-/* Custom 5 column grid for footer links */
+ 
 .custom-col-5 {
   flex: 0 0 20%;
   max-width: 20%;
@@ -1702,11 +979,11 @@ ul {
 
 .footer-col-title {
   color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 125% */
+  line-height: 20px; 
   letter-spacing: 0.8px;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -1725,12 +1002,11 @@ ul {
 .footer-links-list li a {
   color: var(--Black, #1a1a1a);
 
-  /* p */
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px; 
 }
 
 .footer-bottom-section {
@@ -1741,1103 +1017,17 @@ ul {
 .copyright-text {
   color: oklab(0% 0 0 / 0.6);
 
-  /* p */
-  font-family: "Bai Jamjuree";
+  font-family: "Manrope", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px; 
 }
 
 .copyright-text a {
   color: oklab(0% 0 0 / 0.6);
   text-decoration: none;
 }
-/* -----------------------------------Trade Page CSS Start ---------------------------------- */
-.seager-hero-section {
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.seager-hero-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--Black, #1a1a1a);
-  opacity: 0.4;
-  z-index: 1;
-}
-
-.seager-hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.seager-hero-section .container-seager {
-  position: relative;
-  z-index: 2;
-}
-
-.seager-hero-title {
-  color: var(--White, #fff);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 88px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.trade-confidence-section {
-  background-color: var(--White);
-  padding: 64px 0;
-}
-
-.trade-section-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.trade-content-text {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  max-width: 890px;
-  margin: 0 auto 40px auto;
-}
-
-.trade-process-section {
-  background-color: var(--White);
-  padding: 80px 0;
-}
-
-.process-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.process-icon {
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-}
-.trade-process-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-.process-content h3 {
-  color: var(--Black, #1a1a1a);
-  font-family: var(--font-bai-jamjuree);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: capitalize;
-  margin-bottom: 15px;
-}
-
-.process-content p {
-  color: var(--Black, #1a1a1a);
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  max-width: 350px;
-}
-
-/* Trade Form Section */
-.seager-form-section {
-  background-color: var(--White);
-  padding: 64px 0;
-  border-top: 1px solid var(--D9, #d9d9d9);
-}
-.seager-form-section .form-group label {
-  display: none;
-}
-.seager-form-section .seager-form-text {
-  color: var(--Red, #d50100);
-  text-align: center;
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  padding-top: 16px;
-  padding-bottom: 40px;
-}
-.location-select {
-  height: 48px;
-  border: 1px solid #000;
-}
-.location-select:focus {
-  outline: none;
-  border-color: none;
-  box-shadow: none;
-}
-.seager-form-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.seager-form {
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.seager-form input,
-.seager-form textarea {
-  width: 100%;
-  padding: 12px 24px;
-  min-height: 48px;
-  margin-bottom: 16px;
-  border-radius: 4px;
-  border: 1px solid var(--D9, #d9d9d9);
-  background: var(--White, #fff);
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  color: rgb(26, 26, 26);
-}
-
-.seager-form input::placeholder,
-.seager-form textarea::placeholder {
-  color: rgba(26, 26, 26, 0.6);
-  opacity: 1;
-}
-
-.seager-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.seager-form input:focus,
-.seager-form textarea:focus {
-  outline: none;
-  border-color: none;
-  box-shadow: none;
-}
-
-/* -----------------------------------Trade Page CSS End ---------------------------------- */
-
-/* -----------------------------------Stock Docks CSS Start ---------------------------------- */
-.stock-docks-section {
-  padding: 64px 0;
-}
-.stock-docks-section .container-desktop {
-  max-width: 1550px !important;
-}
-.stock-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-/* -----------------------------------Stock Docks CSS End ---------------------------------- */
-
-/* -----------------------------------Docks Gallery CSS Start ---------------------------------- */
-.docks-gallery-section {
-  padding: 0;
-}
-
-.docks-gallery-carousel .item {
-  padding-right: 4px;
-}
-
-.gallery-item {
-  height: 480px;
-  width: 100%;
-}
-
-.gallery-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* -----------------------------------Docks Gallery CSS End ---------------------------------- */
-
-/* -----------------------------------Warranty Page CSS Start ---------------------------------- */
-.warranty-faqs-section .trade-section-title {
-  padding-bottom: 64px;
-  margin: 0;
-}
-.warranty-faq-item {
-  border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-}
-
-.warranty-faq-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.faq-question {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px;
-}
-
-.faq-q-label {
-  color: var(--Blue, #3086b6);
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  margin-right: 5px;
-}
-
-.faq-question-text {
-  color: var(--Black, #1a1a1a);
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.faq-answer {
-  display: flex;
-  align-items: flex-start;
-}
-
-.faq-a-label {
-  color: var(--Blue, #3086b6);
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin-right: 5px;
-}
-
-.faq-answer-text {
-  color: var(--Black, #1a1a1a);
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-/* -----------------------------------Warranty Page CSS End ---------------------------------- */
-
-/* Service Page CSS */
-.service-sub-section .trade-section-title {
-  margin-bottom: 0;
-}
-.service-sub-section .trade-section-subtitle {
-  color: var(--Blue, #3086b6);
-  text-align: center;
-  font-family: "Bai Jamjuree";
-  font-size: 24px;
-  padding: 24px 0;
-}
-
-.service-features-section {
-  padding: 64px 0;
-  background-color: var(--White, #fff);
-}
-
-.feature-img {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-  margin-bottom: 24px;
-}
-
-.feature-title {
-  color: var(--Black, #1a1a1a);
-  font-family: var(
-    --font-bai-jamjuree
-  ); /* Assuming Bai Jamjuree based on other content */
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: capitalize;
-  margin-bottom: 16px;
-}
-
-.feature-text {
-  color: var(--Black, #1a1a1a);
-  font-family: var(--font-bai-jamjuree);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 0;
-}
-.service-splitsec .sub-title {
-  color: var(--Blue, #3086b6);
-  font-family: "Bai Jamjuree";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  text-transform: capitalize;
-  margin-bottom: 16px;
-}
-/* -----------------------------------Service CSS End ---------------------------------- */
-
-/* -----------------------------------Additional Services Section CSS Start ---------------------------------- */
-.additional-services-section {
-  padding: 80px 0;
-  background-color: var(--Lightest-Gray, #f7f6fa);
-}
-.additional-services-section .section-title-large {
-  color: var(--Black, #1a1a1a);
-  font-family: Antonio;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 88px; /* 110% */
-  text-transform: uppercase;
-}
-.service-list {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 24px;
-}
-
-.service-list li {
-  position: relative;
-  padding-left: 24px;
-  margin-bottom: 12px;
-  color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 150% */
-}
-
-.service-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--Black, #1a1a1a);
-  font-size: 20px;
-  line-height: 24px;
-  top: -2px; /* Slight adjustment for alignment */
-}
-/* -----------------------------------Additional Services Section CSS End ---------------------------------- */
-
-/* -----------------------------------Related Offerings Section CSS Start ---------------------------------- */
-.related-offerings-section {
-  padding: 64px 0;
-  background-color: var(--White, #fff);
-}
-
-.related-sub-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: "Bai Jamjuree";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  text-transform: capitalize;
-}
-
-.related-card-img {
-  border-radius: 8px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.related-card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.related-card-content {
-  flex-grow: 1;
-  /* width: 42%; */
-  margin-left: 40px;
-}
-
-.related-card-title {
-  color: var(--Black, #1a1a1a);
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.related-card-text {
-  color: var(--Black, #1a1a1a);
-  width: 87%;
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  margin-bottom: 24px;
-}
-
-.related-link {
-  color: var(--Blue, #3086b6);
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px; /* 125% */
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-}
-
-.related-link:hover {
-  color: var(--Red, #d50100);
-  text-decoration: none;
-}
-.trade-content-text a {
-  text-decoration: underline;
-  color: var(--Black, #1a1a1a);
-}
-.service-sub-section .brand-logos-grid img {
-  width: 160px;
-}
-.slip-rental-section .slip-rental-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.slip-rental-section .service-link-card .card-overlay {
-  background: unset;
-}
-
-.slip-rental-section .card-content {
-  padding: 16px 80px;
-}
-.slip-rental-section .card-content h4 {
-  color: var(--Black, #1a1a1a);
-
-  font-family: "Bai Jamjuree";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 8px;
-}
-.slip-rental-section .card-content p {
-  color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-/* -----------------------------------Storage Rates Section CSS Start ---------------------------------- */
-.storage-rates-section {
-  padding-bottom: 60px;
-  background-color: var(--White);
-}
-.storage-rates-section .section-title-large {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px; /* 126.667% */
-  text-transform: uppercase;
-}
-.rate-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
-  font-family: var(--font-bai-jamjuree);
-  color: var(--Black);
-  font-size: 16px;
-  border-bottom: 1px solid #f7f6fa;
-}
-
-.rate-item:last-child {
-  border-bottom: none;
-}
-
-.rate-item span:first-child {
-  font-weight: 400;
-}
-
-.rate-item .price {
-  font-weight: 700;
-  text-align: right;
-}
-
-.rates-table-container {
-  width: 100%;
-}
-
-.rates-header {
-  background-color: var(--Blue);
-  padding: 12px;
-  text-align: center;
-}
-
-.rates-header h3 {
-  margin: 0;
-  color: #fff;
-  font-size: 16px;
-  font-family: var(--font-bai-jamjuree);
-  font-weight: 700;
-  text-transform: none; /* Keep generic casing unless specified */
-}
-
-.rates-subheader {
-  background-color: var(--Black);
-  padding: 10px 20px;
-  padding-right: 15%;
-  color: #fff;
-  font-family: var(--font-bai-jamjuree);
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.rates-body .rate-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px;
-  padding-right: 15%;
-  font-family: var(--font-bai-jamjuree);
-  color: var(--Black);
-  font-size: 15px;
-}
-
-.rates-body .rate-row:nth-child(even) {
-  background-color: #f7f6fa;
-}
-.rates-body .rate-row span:last-child {
-  font-weight: 600;
-  text-align: right;
-}
-/* -----------------------------------Storage Rates Section CSS End ---------------------------------- */
-
-/* -----------------------------------Contract Terms Section CSS Start ---------------------------------- */
-.contract-terms-section {
-  padding: 64px 0;
-  background-color: var(--White);
-  border-top: 1px solid #d9d9d9;
-}
-
-.contract-header {
-  margin-bottom: 40px;
-}
-
-.contract-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-
-  /* h3 */
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px; /* 126.667% */
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.contract-address {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 150% */
-}
-.contract-cntact {
-  color: var(--Blue, #3086b6);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 40px;
-}
-.body-para {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-}
-.contract-terms-section .container-seager-md {
-  max-width: 960px;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.contract-intro {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  margin-bottom: 24px;
-}
-
-.contract-list {
-  padding-left: 20px;
-}
-
-.contract-list li {
-  color: var(--Black, #1a1a1a);
-
-  /* p */
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  margin-bottom: 16px;
-}
-
-.proshop-brands-sec .brand-logos-grid img {
-  width: 160px;
-  margin-bottom: 40px;
-}
-.proshop-brands-sec .brand-logos-grid {
-  justify-content: space-between;
-  column-gap: 70px;
-  row-gap: 24px;
-}
-.proshop-srvce-sec .sec-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-
-  /* h3 */
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 38px; /* 126.667% */
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-.proshop-srvce-sec .service-link-card p {
-  color: var(--White, #fff);
-  font-family: "Bai Jamjuree";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 133.333% */
-  text-transform: capitalize;
-  margin-top: 40px;
-}
-
-.proshop-srvce-sec .service-link-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #3086b666;
-  z-index: 0;
-  pointer-events: none;
-}
-.proshop-srvce-sec .card-overlay {
-  background: none;
-}
-.about-seager-section .trade-section-title {
-  color: var(--Black, #1a1a1a);
-  font-family: "Bai Jamjuree";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
-  text-transform: capitalize;
-}
-.about-seager-section .trade-section-title span {
-  font-weight: 700;
-}
-.set-apart-content {
-  padding: 45px;
-  border-radius: 24px;
-background: var(--Lightest-Gray, #F7F6FA);
-}
-.set-apart-content img {
-  margin-bottom: 24px;
-}
-.set-apart-content .section-title {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px; 
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-.set-apart-content p {
-  color: var(--Black, #1a1a1a);
-  text-align: center;
-  font-family: "Bai Jamjuree";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-  margin-bottom: 40px;
-}
-/* ---------------CONTACT US PAGE ---------------------- */
-.contactus-cards .feature-card {
-    margin-bottom: 24px;
-}
-.contactus-cards .feature-card .feature-img {
-    margin-bottom: 0px;
-}
-.contactus-cards .feature-card .feature-title {
-  color: var(--Black, #1A1A1A);
-
-
-font-family: "Bai Jamjuree";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; 
-text-transform: capitalize;
-    margin: 16px 0;
-}
-.contactus-cards .feature-card p {
-color: var(--Black, #1A1A1A);
-
-
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-    margin-bottom: 16px;
-}
-.contactus-cards .feature-card .feature-call {
-color: var(--Blue, #3086B6);
-
-
-font-family: "Bai Jamjuree";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px;
-text-transform: capitalize;
-    margin-bottom: 16px;
-}
-.contactus-cards .feature-card ul li {
-  color: var(--Black, #1A1A1A);
-
-
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
-list-style: none;
-padding: 2px 0;
-}
-#contact_page_form {
-    border-top:none;
-    margin-top: -170px;
-    padding: 0;
-}
-.cntctpgeform {
-    border-radius: 24px;
-    background: var(--Lightest-Gray, #F7F6FA);
-    padding: 40px 120px;
-    position: relative;
-    z-index: 9;
-}
-/* ---------private -charter ---------- */
-.common-hero-sec2 .prihero-content {
-    max-width: 630px;
-}
-.common-hero-sec2 .hero-title{
-color: var(--Black, #1A1A1A);
-font-family: Antonio;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: 88px;
-text-align: left;
-  text-transform: uppercase;
-  margin-bottom: 44px;
-}
-.common-hero-sec2 .hero-text{
-  margin-bottom: 40px;
-}
-
-.private-charter-policy{
-  background: var(--Lightest-Gray, #F7F6FA);
-  padding: 40px 0;
-}
-.private-charter-policy .process-content p {
-    max-width: 400px;
-}
-
-.rental-frame{
-  padding: 80px 0;
-}
-.rentals-frame-area{
-  border-radius: 24px;
-border: 4px dashed var(--D9, #D9D9D9);
-background: var(--Lightest-Gray, #F7F6FA);
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 1080px;
-}
-.rentals-frame-area h3{
-color: hsla(0, 0%, 10%, 0.1);
-font-family: Antonio;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: 88px; /* 110% */
-text-transform: uppercase;
-}
-
-.rentals-service-sec .card-content {
-    padding: 16px 0 0 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.rental-guidelines-sec{
-  padding: 64px 0;
-  background: var(--Lightest-Gray, #F7F6FA);
-}
-.rental-guidelines-sec .rental-guidelines-title{
-  color: var(--Black, #1A1A1A);
-text-align: center;
-
-/* h2 */
-font-family: Antonio;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 48px; /* 120% */
-text-transform: uppercase;
-    margin-bottom: 40px;
-}
-.rental-guidelines-sec .rental-guidelines-content p, .rental-guidelines-content li{
-color: var(--Black, #1A1A1A);
-
-/* p */
-font-family: "Bai Jamjuree";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 8px;
-}
-.rental-guidelines-sec .rental-guidelines-content ul{
-  padding: 15px;
-}
-.local-showroom-brands{
-  padding: 48px 0;
-  border-top: 1px solid var(--D9, #D9D9D9);
-  border-bottom: 1px solid var(--D9, #D9D9D9);
-}
-
-.inventory-loc{
-  border-top: 1px solid var(--D9, #D9D9D9);
-}
-.gallerysec {
-  padding-bottom: 48px;
-}
-.gallerysec .gallerysec-cntnt {
-    display: flex;
-    overflow: hidden;
-}
-.location-splitsec{
-    background: var(--Lightest-Gray, #F7F6FA);
-}
-.location-splitsec .section-text-regular {
-    margin-bottom: 24px;
-}
-.location-splitsec .cntct-no a{
-  color: var(--Blue, #3086B6);
-text-align: center;
-font-family: "Bai Jamjuree";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; 
-text-transform: capitalize;
-}
-.location-splitsec .hours{
-    margin: 24px 0;
-}
-.location-splitsec .hours h5{
-   color: var(--Black, #1A1A1A);
-text-align: center;
-font-family: "Bai Jamjuree";
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px; 
-}
-
-.map-box {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.map-box iframe {
-  width: 100%;
-  height: 100%;
-}
-.loc-marina-event .slip-rental-title{
-  color: var(--Black, #1A1A1A);
-  text-align: center;
-  font-family: Antonio;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-.loc-marina-event-desc{
-  max-width: 880px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.loc-marina-event .service-link-card {
-    width: 480px;
-    height: 680px;
-    border-radius: 48px;
-}
-.loc-marina-event .services-links-grid {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-.loc-marina-event .card-overlay img {
-  width: 240px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.loc-can-east-service .feature-title {
-  color: var(--Black, #1A1A1A);
-  font-family: Antonio;
-  font-size: 30px;
-  font-style: normal; 
-  font-weight: 700;
-  line-height: 38px; 
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-.loc-keuka-rentals{
-  padding-top: 80px;
-}
-.loc-keuka-rentals .services-links-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-}
-.loc-keuka-rentals .service-link-card {
-    height: 620px;
-}
-.loc-keuka-rentals .card-overlay h3{
-color: var(--White, #FFF);
-font-family: Antonio;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: 48px;
-text-transform: uppercase;
-}
-.loc-keuka-rentals .card-overlay {
-    padding: 0 24px 40px 40px;
-    background: none;
-}
-.loc-keuka-rentals .card-content {
-    padding: 16px 24px 16px 40px;
-}
-
 
 @media (max-width: 1400px) {
   .mega-menu-brands-grid {
@@ -2853,7 +1043,7 @@ text-transform: uppercase;
 
 @media (max-width: 1330px) {
   .navbar-logo img {
-    width: 200px;
+    width: 150px;
   }
 }
 
@@ -3034,181 +1224,6 @@ text-transform: uppercase;
   }
   /* -------------nav bar css end here -----------  */
 
-  /* -------------Hero section css start here -----------  */
-  .hero-section {
-    height: 600px;
-  }
-
-  .hero-content h1 {
-    font-size: 56px;
-    line-height: 64px;
-  }
-  .storage-seasonal-sec .services-links-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .storage-seasonal-sec .service-link-card {
-    height: 420px;
-  }
-  .storage-seasonal-sec .card-overlay {
-    padding: 50px 0px 0px 50px;
-  }
-  .feature-content-box {
-    text-align: center;
-    padding-top: 20px;
-  }
-  .new-arrivals-info {
-    text-align: center;
-  }
-  .welcome-content p {
-    margin-bottom: 20px;
-    color: #fff;
-    max-width: 100%;
-  }
-  .footer-top-section {
-    padding: 40px 0;
-  }
-  /* -------------Hero section css end here -----------  */
-
-  /* -------------Rental section css start here -----------  */
-
-  .rental-card {
-    padding: 40px;
-    min-height: 500px;
-    background-attachment: scroll; /* Disable fixed bg on mobile */
-  }
-
-  .rental-content h2 {
-    font-size: 56px;
-    line-height: 64px;
-  }
-
-  /* -------------Rental section css end here -----------  */
-
-  /* -------------Services Links Section CSS Start ----------- */
-  .services-links-grid {
-    grid-template-columns: 1fr; /* Stack on mobile */
-    gap: 30px;
-  }
-  .service-link-card {
-    height: 500px;
-  }
-  /* -------------Services Links Section CSS End ------------- */
-
-  .brand-logos-section {
-    padding: 40px 0;
-  }
-  .brand-logos-grid {
-    column-gap: 40px;
-    justify-content: center;
-  }
-  .brand-logos-grid img {
-    width: 150px;
-  }
-  /* -------------Brand Logos Section CSS End ------------- */
-
-  .feature-content-box {
-    max-width: 100%;
-  }
-
-  /* -------------Quick Links Section CSS Start ------------- */
-  .quick-links-section {
-    padding: 40px 0;
-  }
-  .quick-links-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  .quick-link-card {
-    height: 200px;
-  }
-  .quick-card-overlay h3 {
-    font-size: 20px;
-  }
-  /* -------------Quick Links Section CSS End ------------- */
-
-  /* -------------Trade Page CSS Start ------------- */
-  .seager-hero-title {
-    font-size: 56px;
-    line-height: 64px;
-  }
-  .seager-hero-section {
-    height: 500px;
-  }
-  .trade-section-title {
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 30px;
-  }
-  .trade-confidence-section {
-    padding: 50px 0;
-  }
-  .process-content p {
-    max-width: 100%;
-  }
-  /* -------------Trade Page CSS End ------------- */
-
-  .related-card {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  .related-card-img {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-  .related-card-content {
-    margin-left: 0 !important;
-    width: 100%;
-  }
-  .related-card-text {
-    width: 100%;
-  }
-
-  /* ------about -------  */
-.about-seager-section .trade-section-title {
-    font-size: 22px;
-    line-height: 38px;
-}
-
-.set-apart-content {
-    padding: 20px;
-}
-.set-apart-content .section-title {
-    font-size: 30px;
-    line-height: 28px;
-    margin-bottom: 20px;
-}
-
-
-
-/* -------contact us page -------- */
-#contact_page_form {
-    margin-top: 0;
-}
-.cntctpgeform {
-    border-radius: 24px;
-    padding: 30px 15px;
-        margin-top: 15px;
-}
-
-
-.rental-guidelines-sec{
-  padding: 34px 0;
-}
-.rental-guidelines-sec .rental-guidelines-title{
-font-size: 30px;
-line-height: 38px; 
-    margin-bottom: 30px;
-}
-.loc-keuka-rentals{
-  padding-top: 40px;
-}
-.loc-keuka-rentals .services-links-grid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
-}
-.local-showroom-brands {
-    padding: 10px 0;
-}
   /* Stack columns vertically */
   .footer-links-section .row {
     flex-direction: column;
@@ -3256,22 +1271,8 @@ line-height: 38px;
     display: none;
     padding-bottom: 20px;
   }
-  .footer-connect-box {
-    padding: 30px;
-    text-align: center;
-  }
-  .footer-social-box {
-    padding: 30px;
-    text-align: center;
-  }
-  .footer-social-box .social-icons {
-    justify-content: center;
-  }
   .copyright-text {
     text-align: center;
-  }
-  .footer-contact-box {
-    padding: 30px;
   }
 }
 
@@ -3315,9 +1316,6 @@ line-height: 38px;
     gap: 12px;
   }
 
-  .brand-card {
-    aspect-ratio: 16/9;
-  }
 
   .brand-card .brand-logo {
     max-width: 100px;
@@ -3365,138 +1363,10 @@ line-height: 38px;
   }
 
   /* -----------------------------------Nav bar css end here ----------------------------------  */
-
-  /* -----------------------------------Hero section css start here ----------------------------------  */
-
-  .hero-section {
-    height: 500px;
-  }
-
-  .hero-content h1 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .btn-global {
-    padding: 12px 30px;
-  }
-
-  /* -----------------------------------Hero section css end here ----------------------------------  */
-  /* -----------------------------------Rental section css start here ----------------------------------  */
-
-  .rental-section {
-    padding: 40px 0;
-  }
-
-  .rental-card {
-    padding: 30px 20px;
-    border-radius: 16px;
-    min-height: 400px;
-  }
-
-  .rental-content h2 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  /* -----------------------------------Rental section css end here ----------------------------------  */
-  .service-link-card {
-    height: 400px;
-  }
-  .card-overlay h3 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  /* -------------Brand Logos Section CSS Start ------------- */
-  .brand-logos-grid {
-    column-gap: 20px;
-    row-gap: 20px;
-  }
-  .brand-logos-grid img {
-    /* create 2 col layout on mobile */
-    width: 120px;
-    max-width: 140px;
-    height: 60px; /* Limit height so they line up better */
-    margin-bottom: 0;
-  }
-  /* -------------Brand Logos Section CSS End ------------- */
-
-  /* -------------New Arrivals Section CSS Start ------------- */
-  .new-arrivals-info h2 {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .new-arrivals-section {
-    padding: 40px 0;
-  }
-  .boat-img {
-    height: 200px;
-  }
-  /* -------------New Arrivals Section CSS End ------------- */
-  /* -------------Generic Split Feature Section CSS Start ------------- */
-  .section-title-large {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .split-feature-section-wrapper {
-    padding: 40px 0;
-  }
-  /* -------------Generic Split Feature Section CSS End ------------- */
-
-  /* -------------Welcome Section CSS Start ------------- */
-  .welcome-section {
-    height: auto;
-    padding: 60px 0;
-  }
-  .welcome-content h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .welcome-content h3 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-  /* -------------Welcome Section CSS End ------------- */
-
-  /* -------------Quick Links Section CSS Start ------------- */
-  .quick-links-grid {
-    grid-template-columns: 1fr;
-  }
-  /* -------------Quick Links Section CSS End ------------- */
-
-  /* -------------Trade Page CSS Start ------------- */
-  .seager-hero-title {
-    font-size: 36px;
-    line-height: 44px;
-  }
-  .seager-hero-section {
-    height: 400px;
-  }
-  .trade-section-title {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .trade-confidence-section {
-    padding: 30px 0;
-  }
-  /* -------------Trade Page CSS End ------------- */
-
-  /* ------Contract Terms Section CSS Start ------ */
-
-  .contract-title {
-    font-size: 24px;
-  }
-  /* ------Contract Terms Section CSS End ------ */
 }
 
 @media (max-width: 450px) {
   /* -------------Footer CSS Start ------------- */
-  .contact-item {
-    flex-direction: column;
-  }
-  .newsletter-form {
-    flex-direction: column;
-  }
+
   /* -------------Footer CSS End ------------- */
 }

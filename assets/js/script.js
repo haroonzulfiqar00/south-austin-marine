@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     // Close mobile menu when clicking outside
     $(document).on('click', function(e) {
-        if (!$(e.target).closest('.navbar-seager').length) {
+        if (!$(e.target).closest('.navbar-austin').length) {
             $('#navbarMenu').removeClass('active');
             $('#navbarToggle').removeClass('active');
         }
@@ -32,7 +32,6 @@ $(document).ready(function() {
             e.preventDefault();
             $('#inventoryMegaMenu').toggleClass('active');
             $('#serviceMegaMenu').removeClass('active');
-            $('#experiencesMegaMenu').removeClass('active');
             $('#locationDropdown').removeClass('active');
             $('#sideMegaMenu').removeClass('active');
             $('#moreMenuTrigger').removeClass('active');
@@ -52,7 +51,6 @@ $(document).ready(function() {
         if (e.key === 'Escape') {
             $('#inventoryMegaMenu').removeClass('active');
             $('#serviceMegaMenu').removeClass('active');
-            $('#experiencesMegaMenu').removeClass('active');
             $('#sideMegaMenu').removeClass('active');
             $('#moreMenuTrigger').removeClass('active');
         }
@@ -73,7 +71,6 @@ $(document).ready(function() {
             e.preventDefault();
             $('#serviceMegaMenu').toggleClass('active');
             $('#inventoryMegaMenu').removeClass('active');
-            $('#experiencesMegaMenu').removeClass('active');
             $('#locationDropdown').removeClass('active');
             $('#sideMegaMenu').removeClass('active');
             $('#moreMenuTrigger').removeClass('active');
@@ -101,7 +98,6 @@ $(document).ready(function() {
     $('#experiencesMenuTrigger').on('click', function(e) {
         if ($(window).width() > 991) {
             e.preventDefault();
-            $('#experiencesMegaMenu').toggleClass('active');
             $('#inventoryMegaMenu').removeClass('active');
             $('#serviceMegaMenu').removeClass('active');
             $('#locationDropdown').removeClass('active');
@@ -110,18 +106,7 @@ $(document).ready(function() {
         }
     });
 
-     // Close experiences mega menu when clicking outside
-    $(document).on('click', function(e) {
-        if (!$(e.target).closest('#experiencesMenuTrigger').length && 
-            !$(e.target).closest('#experiencesMegaMenu').length) {
-            $('#experiencesMegaMenu').removeClass('active');
-        }
-    });
 
-    // Prevent experiences mega menu from closing when clicking inside it
-    $('#experiencesMegaMenu').on('click', function(e) {
-        e.stopPropagation();
-    });
 
     // ===================================
     // Mobile Accordion Toggle
@@ -152,7 +137,6 @@ $(document).ready(function() {
         // Close mega menus
         $('#inventoryMegaMenu').removeClass('active');
         $('#serviceMegaMenu').removeClass('active');
-        $('#experiencesMegaMenu').removeClass('active');
         $('#sideMegaMenu').removeClass('active');
         $('#moreMenuTrigger').removeClass('active');
 
@@ -195,7 +179,6 @@ $(document).ready(function() {
         $('#navbarToggle').removeClass('active');
         $('#inventoryMegaMenu').removeClass('active');
         $('#serviceMegaMenu').removeClass('active');
-        $('#experiencesMegaMenu').removeClass('active');
         $('#locationDropdown').removeClass('active');
         
         // Toggle side menu and button active state
