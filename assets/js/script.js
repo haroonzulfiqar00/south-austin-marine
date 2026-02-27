@@ -254,7 +254,48 @@ $(document).ready(function() {
             }
         });
     }
+$('.brand-carousel').owlCarousel({
+    loop: true,
+    margin: 64,
+    nav: false,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 2500,
+    autoplayHoverPause: true,
+    responsive:{
+        0:{ items:2 },
+        576:{ items:3 },
+        768:{ items:4 },
+        992:{ items:6 },
+        1200:{ items:8 },
+        1500:{ items:10.5 }
+    }
+});
 
+$(document).ready(function(){
+  $("#arrivals-carousel").owlCarousel({
+      center: true,      // Keeps the active card in the middle
+      loop: true,        // Infinite loop for smooth "peeking"
+      margin: 20,        // Space between cards
+      nav: false,
+      dots: false,
+      stagePadding: 300, // Adjust this value to show more or less of the side cards
+      responsive:{
+          0:{
+              items: 1,
+              stagePadding: 40 // Smaller peek for mobile
+          },
+          768:{
+              items: 2,
+              stagePadding: 70
+          },
+          1200:{
+              items: 3,
+              stagePadding: 200 // Larger peek for desktop
+          }
+      }
+  });
+});
 
     // ===================================
     // Mobile Footer Accordion
